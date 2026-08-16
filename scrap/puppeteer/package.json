@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/index.ts",
+    "reddit": "tsx src/reddit/index.ts",
+    "trends": "tsx src/google-trends/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
