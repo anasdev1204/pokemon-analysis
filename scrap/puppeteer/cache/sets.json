@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Sword & Shield",
+    "searchName": "swsh01",
+    "series": "Sword & Shield Series",
+    "releaseDate": "February 07, 2020"
+  },
+  {
+    "name": "Rebel Clash",
+    "series": "Sword & Shield Series",
+    "releaseDate": "May 01, 2020"
+  },
+  {
+    "name": "Darkness Ablaze",
+    "series": "Sword & Shield Series",
+    "releaseDate": "August 14, 2020"
+  },
+  {
+    "name": "Champion's Path",
+    "series": "Sword & Shield Series",
+    "releaseDate": "September 25, 2020"
+  },
+  {
+    "name": "Vivid Voltage",
+    "series": "Sword & Shield Series",
+    "releaseDate": "November 13, 2020"
+  },
+  {
+    "name": "Shining Fates",
+    "series": "Sword & Shield Series",
+    "releaseDate": "February 19, 2021"
+  },
+  {
+    "name": "Battle Styles",
+    "series": "Sword & Shield Series",
+    "releaseDate": "March 19, 2021"
+  },
+  {
+    "name": "Chilling Reign",
+    "series": "Sword & Shield Series",
+    "releaseDate": "June 18, 2021"
+  },
+  {
+    "name": "Evolving Skies",
+    "series": "Sword & Shield Series",
+    "releaseDate": "August 27, 2021"
+  },
+  {
+    "name": "Celebrations",
+    "series": "Sword & Shield Series",
+    "releaseDate": "October 08, 2021"
+  },
+  {
+    "name": "Fusion Strike",
+    "series": "Sword & Shield Series",
+    "releaseDate": "November 12, 2021"
+  },
+  {
+    "name": "Brilliant Stars",
+    "series": "Sword & Shield Series",
+    "releaseDate": "February 25, 2022"
+  },
+  {
+    "name": "Astral Radiance",
+    "series": "Sword & Shield Series",
+    "releaseDate": "May 27, 2022"
+  },
+  {
+    "name": "Pokemon GO",
+    "series": "Sword & Shield Series",
+    "releaseDate": "July 01, 2022"
+  },
+  {
+    "name": "Lost Origin",
+    "series": "Sword & Shield Series",
+    "releaseDate": "September 09, 2022"
+  },
+  {
+    "name": "Silver Tempest",
+    "series": "Sword & Shield Series",
+    "releaseDate": "November 11, 2022"
+  },
+  {
+    "name": "Crown Zenith",
+    "series": "Sword & Shield Series",
+    "releaseDate": "January 20, 2023"
+  },
+  {
+    "name": "Scarlet & Violet",
+    "searchName": "sv1",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "March 31, 2023"
+  },
+  {
+    "name": "Paldea Evolved",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "June 09, 2023"
+  },
+  {
+    "name": "Obsidian Flames",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "August 11, 2023"
+  },
+  {
+    "name": "151",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "September 22, 2023"
+  },
+  {
+    "name": "Paradox Rift",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "November 03, 2023"
+  },
+  {
+    "name": "Paldean Fates",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "January 26, 2024"
+  },
+  {
+    "name": "Temporal Forces",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "March 22, 2024"
+  },
+  {
+    "name": "Twilight Masquerade",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "May 24, 2024"
+  },
+  {
+    "name": "Shrouded Fable",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "August 02, 2024"
+  },
+  {
+    "name": "Stellar Crown",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "September 13, 2024"
+  },
+  {
+    "name": "Surging Sparks",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "November 08, 2024"
+  },
+  {
+    "name": "Prismatic Evolutions",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "January 17, 2025"
+  },
+  {
+    "name": "Journey Together",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "March 28, 2025"
+  },
+  {
+    "name": "Destined Rivals",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "May 30, 2025"
+  },
+  {
+    "name": "White Flare",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "July 18, 2025"
+  },
+  {
+    "name": "Black Bolt",
+    "series": "Scarlet & Violet Series",
+    "releaseDate": "July 18, 2025"
+  },
+  {
+    "name": "Mega Evolution",
+    "searchName": "ME01",
+    "series": "Mega Evolution Series",
+    "releaseDate": "September 26, 2025"
+  },
+  {
+    "name": "Phantasmal Flames",
+    "series": "Mega Evolution Series",
+    "releaseDate": "November 14, 2025"
+  },
+  {
+    "name": "Ascended Heroes",
+    "series": "Mega Evolution Series",
+    "releaseDate": "January 30, 2026"
+  },
+  {
+    "name": "Perfect Order",
+    "series": "Mega Evolution Series",
+    "releaseDate": "March 27, 2026"
+  },
+  {
+    "name": "Chaos Rising",
+    "series": "Mega Evolution Series",
+    "releaseDate": "May 22, 2026"
+  },
+  {
+    "name": "Pitch Black",
+    "series": "Mega Evolution Series",
+    "releaseDate": "July 17, 2026"
+  }
+]

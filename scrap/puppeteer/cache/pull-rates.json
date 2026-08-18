@@ -1,0 +1,842 @@
+[
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 9,
+    "setName": "Pitch Black",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 12,
+    "setName": "Pitch Black",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 80,
+    "setName": "Pitch Black",
+    "cards": 0
+  },
+  {
+    "rarity": "Mega Hyper Rare",
+    "pullRate": 1075,
+    "setName": "Pitch Black",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 9,
+    "setName": "Chaos Rising",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 13,
+    "setName": "Chaos Rising",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 100,
+    "setName": "Chaos Rising",
+    "cards": 0
+  },
+  {
+    "rarity": "Mega Hyper Rare",
+    "pullRate": 1000,
+    "setName": "Chaos Rising",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 9,
+    "setName": "Perfect Order",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 12,
+    "setName": "Perfect Order",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 75,
+    "setName": "Perfect Order",
+    "cards": 0
+  },
+  {
+    "rarity": "Mega Hyper Rare",
+    "pullRate": 1786,
+    "setName": "Perfect Order",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 9,
+    "setName": "Ascended Heroes",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 21,
+    "setName": "Ascended Heroes",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 71,
+    "setName": "Ascended Heroes",
+    "cards": 0
+  },
+  {
+    "rarity": "Mega Hyper Rare",
+    "pullRate": 541,
+    "setName": "Ascended Heroes",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 9,
+    "setName": "Phantasmal Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 12,
+    "setName": "Phantasmal Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 80,
+    "setName": "Phantasmal Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Mega Hyper Rare",
+    "pullRate": 1259,
+    "setName": "Phantasmal Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 9,
+    "setName": "Mega Evolution",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 12,
+    "setName": "Mega Evolution",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 101,
+    "setName": "Mega Evolution",
+    "cards": 0
+  },
+  {
+    "rarity": "Mega Hyper Rare",
+    "pullRate": 1259,
+    "setName": "Mega Evolution",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 12,
+    "setName": "Destined Rivals",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 16,
+    "setName": "Destined Rivals",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 94,
+    "setName": "Destined Rivals",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 149,
+    "setName": "Destined Rivals",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 12,
+    "setName": "Journey Together",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 15,
+    "setName": "Journey Together",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 86,
+    "setName": "Journey Together",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 137,
+    "setName": "Journey Together",
+    "cards": 0
+  },
+  {
+    "rarity": "ACE SPEC Rare",
+    "pullRate": 21,
+    "setName": "Prismatic Evolutions",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 13,
+    "setName": "Prismatic Evolutions",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 45,
+    "setName": "Prismatic Evolutions",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 167,
+    "setName": "Prismatic Evolutions",
+    "cards": 0
+  },
+  {
+    "rarity": "Double Rare",
+    "pullRate": 6,
+    "setName": "Surging Sparks",
+    "cards": 0
+  },
+  {
+    "rarity": "ACE SPEC Rare",
+    "pullRate": 20,
+    "setName": "Surging Sparks",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 13,
+    "setName": "Surging Sparks",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 15,
+    "setName": "Surging Sparks",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 87,
+    "setName": "Surging Sparks",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 189,
+    "setName": "Surging Sparks",
+    "cards": 0
+  },
+  {
+    "rarity": "Double Rare",
+    "pullRate": 6,
+    "setName": "Twilight Masquerade",
+    "cards": 0
+  },
+  {
+    "rarity": "ACE SPEC Rare",
+    "pullRate": 20,
+    "setName": "Twilight Masquerade",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 13,
+    "setName": "Twilight Masquerade",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 15,
+    "setName": "Twilight Masquerade",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 86,
+    "setName": "Twilight Masquerade",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 146,
+    "setName": "Twilight Masquerade",
+    "cards": 0
+  },
+  {
+    "rarity": "Double Rare",
+    "pullRate": 6,
+    "setName": "Paradox Rift",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 13,
+    "setName": "Paradox Rift",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 15,
+    "setName": "Paradox Rift",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 47,
+    "setName": "Paradox Rift",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 82,
+    "setName": "Paradox Rift",
+    "cards": 0
+  },
+  {
+    "rarity": "Double Rare",
+    "pullRate": 8,
+    "setName": "151",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 12,
+    "setName": "151",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 16,
+    "setName": "151",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 32,
+    "setName": "151",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 51,
+    "setName": "151",
+    "cards": 0
+  },
+  {
+    "rarity": "Double Rare",
+    "pullRate": 7,
+    "setName": "Obsidian Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 13,
+    "setName": "Obsidian Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 15,
+    "setName": "Obsidian Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 32,
+    "setName": "Obsidian Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 53,
+    "setName": "Obsidian Flames",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 13,
+    "setName": "Paldea Evolved",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 12,
+    "setName": "Paldea Evolved",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 32,
+    "setName": "Paldea Evolved",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 56,
+    "setName": "Paldea Evolved",
+    "cards": 0
+  },
+  {
+    "rarity": "Double Rare",
+    "pullRate": 7,
+    "setName": "Scarlet & Violet",
+    "cards": 0
+  },
+  {
+    "rarity": "Illustration Rare",
+    "pullRate": 13,
+    "setName": "Scarlet & Violet",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 15,
+    "setName": "Scarlet & Violet",
+    "cards": 0
+  },
+  {
+    "rarity": "Special Illustration Rare",
+    "pullRate": 32,
+    "setName": "Scarlet & Violet",
+    "cards": 0
+  },
+  {
+    "rarity": "Hyper Rare",
+    "pullRate": 53,
+    "setName": "Scarlet & Violet",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 10,
+    "setName": "Crown Zenith",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VSTAR",
+    "pullRate": 24,
+    "setName": "Crown Zenith",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 72,
+    "setName": "Crown Zenith",
+    "cards": 0
+  },
+  {
+    "rarity": "Radiant Rare",
+    "pullRate": 33,
+    "setName": "Crown Zenith",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 29,
+    "setName": "Crown Zenith",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 67,
+    "setName": "Crown Zenith",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare",
+    "pullRate": 6,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 9,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VSTAR",
+    "pullRate": 31,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 200,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Radiant Rare",
+    "pullRate": 22,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 27,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Full Art Trainer",
+    "pullRate": 100,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 50,
+    "setName": "Silver Tempest",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 29,
+    "setName": "Lost Origin",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VSTAR",
+    "pullRate": 29,
+    "setName": "Lost Origin",
+    "cards": 0
+  },
+  {
+    "rarity": "Radiant Rare",
+    "pullRate": 18,
+    "setName": "Lost Origin",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 12,
+    "setName": "Lost Origin",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 71,
+    "setName": "Lost Origin",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 6,
+    "setName": "Astral Radiance",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VSTAR",
+    "pullRate": 18,
+    "setName": "Astral Radiance",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 53,
+    "setName": "Astral Radiance",
+    "cards": 0
+  },
+  {
+    "rarity": "Radiant Rare",
+    "pullRate": 18,
+    "setName": "Astral Radiance",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 36,
+    "setName": "Astral Radiance",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 53,
+    "setName": "Astral Radiance",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VSTAR",
+    "pullRate": 67,
+    "setName": "Brilliant Stars",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 100,
+    "setName": "Brilliant Stars",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 53,
+    "setName": "Brilliant Stars",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 6,
+    "setName": "Fusion Strike",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 18,
+    "setName": "Fusion Strike",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 18,
+    "setName": "Fusion Strike",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 36,
+    "setName": "Fusion Strike",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 10,
+    "setName": "Evolving Skies",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 18,
+    "setName": "Evolving Skies",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 22,
+    "setName": "Evolving Skies",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 45,
+    "setName": "Evolving Skies",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 19,
+    "setName": "Chilling Reign",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 18,
+    "setName": "Chilling Reign",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 36,
+    "setName": "Chilling Reign",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 9,
+    "setName": "Battle Styles",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 18,
+    "setName": "Battle Styles",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 18,
+    "setName": "Battle Styles",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 36,
+    "setName": "Battle Styles",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 8,
+    "setName": "Shining Fates",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 16,
+    "setName": "Shining Fates",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 16,
+    "setName": "Shining Fates",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 71,
+    "setName": "Shining Fates",
+    "cards": 0
+  },
+  {
+    "rarity": "Shiny Rare V",
+    "pullRate": 22,
+    "setName": "Shining Fates",
+    "cards": 0
+  },
+  {
+    "rarity": "Shiny Rare VMAX",
+    "pullRate": 67,
+    "setName": "Shining Fates",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 9,
+    "setName": "Vivid Voltage",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 18,
+    "setName": "Vivid Voltage",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 18,
+    "setName": "Vivid Voltage",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 18,
+    "setName": "Vivid Voltage",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 6,
+    "setName": "Champion's Path",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 29,
+    "setName": "Champion's Path",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 18,
+    "setName": "Champion's Path",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 34,
+    "setName": "Champion's Path",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 8,
+    "setName": "Darkness Ablaze",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 26,
+    "setName": "Darkness Ablaze",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 26,
+    "setName": "Darkness Ablaze",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 48,
+    "setName": "Darkness Ablaze",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 9,
+    "setName": "Rebel Clash",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 10,
+    "setName": "Rebel Clash",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 36,
+    "setName": "Rebel Clash",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare V",
+    "pullRate": 10,
+    "setName": "Sword & Shield",
+    "cards": 0
+  },
+  {
+    "rarity": "Holo Rare VMAX",
+    "pullRate": 18,
+    "setName": "Sword & Shield",
+    "cards": 0
+  },
+  {
+    "rarity": "Ultra Rare",
+    "pullRate": 36,
+    "setName": "Sword & Shield",
+    "cards": 0
+  },
+  {
+    "rarity": "Secret Rare",
+    "pullRate": 71,
+    "setName": "Sword & Shield",
+    "cards": 0
+  }
+]
