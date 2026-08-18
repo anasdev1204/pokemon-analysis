@@ -6,21 +6,24 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
+
 SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
+
+SETS_PATH = "/Users/anas/Projects/pkmn-analysis/scrap/puppeteer/cache/sets.json"
+OUTPUT_PATH = "/Users/anas/Projects/pkmn-analysis/data/youtube-set-videos.json"
 
 
 def get_credentials():
     credentials = None
 
-    # Reuse previously obtained credentials
     if os.path.exists("token.json"):
         credentials = Credentials.from_authorized_user_file(
             "token.json",
             SCOPES
         )
 
-    if not credentials.valid:
-        if credentials.refresh_token:
+    if not credentials or not credentials.valid:
+        if credentials and credentials.expired and credentials.refresh_token:
             credentials.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
@@ -34,6 +37,85 @@ def get_credentials():
 
     return credentials
 
+
+def search_videos(youtube, search_name):
+    videos = []
+
+    request = youtube.search().list(
+        part="snippet",
+        maxResults=50,
+        q=f"{search_name} pokemon",
+        type="video",
+        videoDuration="long"
+    )
+
+    while request:
+        response = request.execute()
+
+        for video in response.get("items", []):
+            videos.append({
+                "id": video["id"]["videoId"],
+                "title": video["snippet"]["title"],
+                "publish_time": video["snippet"]["publishedAt"]
+            })
+
+        next_page_token = response.get("nextPageToken")
+
+        if not next_page_token:
+            break
+
+        request = youtube.search().list(
+            part="snippet",
+            maxResults=50,
+            q=f"{search_name} pokemon",
+            type="video",
+            videoDuration="long",
+            pageToken=next_page_token
+        )
+
+    return videos
+
+
+def add_video_statistics(youtube, videos):
+    if not videos:
+        return videos
+
+    # YouTube allows up to 50 IDs per videos.list request
+    for i in range(0, len(videos), 50):
+        batch = videos[i:i + 50]
+
+        video_ids = [video["id"] for video in batch]
+
+        request = youtube.videos().list(
+            part="statistics",
+            id=",".join(video_ids)
+        )
+
+        response = request.execute()
+
+        stats_by_id = {
+            video["id"]: video.get("statistics", {})
+            for video in response.get("items", [])
+        }
+
+        for video in batch:
+            stats = stats_by_id.get(video["id"], {})
+
+            video["view_count"] = int(
+                stats.get("viewCount", 0)
+            )
+
+            video["like_count"] = int(
+                stats.get("likeCount", 0)
+            )
+
+            video["comment_count"] = int(
+                stats.get("commentCount", 0)
+            )
+
+    return videos
+
+
 def main():
     os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
@@ -45,47 +127,75 @@ def main():
         credentials=credentials
     )
 
-    request = youtube.search().list(
-        part="snippet",
-        maxResults=50,
-        q="destined rivals pokemon",
-        type="video",
-        videoDuration="long"
+    # Load sets
+    with open(SETS_PATH, "r", encoding="utf-8") as file:
+        sets = json.load(file)
+
+    results = {}
+
+    for index, pkmn_set in enumerate(sets, start=1):
+        set_name = pkmn_set["name"]
+        release_date = pkmn_set["releaseDate"]
+
+        is_additional_name = pkmn_set["searchName"] if "searchName" in pkmn_set else None
+        if is_additional_name: 
+            set_name += " " +is_additional_name
+        search_name = set_name + " pokemon tcg"
+
+        print(
+            f"[{index}/{len(sets)}] "
+            f"Searching YouTube for {search_name}..."
+        )
+
+        try:
+            videos = search_videos(
+                youtube,
+                search_name
+            )
+
+            videos = add_video_statistics(
+                youtube,
+                videos
+            )
+
+            # Add set-specific information
+            for video in videos:
+                video["set_name"] = set_name
+                video["set_search_name"] = search_name
+                video["set_release_date"] = release_date
+
+            results[set_name] = videos
+
+            print(
+                f"Found {len(videos)} videos for {set_name}"
+            )
+
+        except Exception as error:
+            print(
+                f"Failed to process {set_name}: {error}"
+            )
+
+            results[set_name] = []
+
+    # Make sure data directory exists
+    os.makedirs(
+        os.path.dirname(OUTPUT_PATH),
+        exist_ok=True
     )
-    response = request.execute()
 
-    totalResults = response['pageInfo']['totalResults']
-    print(f"Total results: {totalResults}")
+    with open(
+        OUTPUT_PATH,
+        "w",
+        encoding="utf-8"
+    ) as file:
+        json.dump(
+            results,
+            file,
+            indent=2,
+            ensure_ascii=False
+        )
 
-    videos = []
-    for video in response['items']:
-        id = video['id']['videoId']
-        info = video['snippet']
-        title = info['title']
-        publish_time = info['publishedAt']
-        videos.append({
-            "id": id,
-            "title": title,
-            "publish_time": publish_time
-        })
-
-    video_ids = [video['id'] for video in videos]
-    stats_request = youtube.videos().list(
-        part="statistics,snippet",
-        id=",".join(video_ids)
-    )
-    stats_response = stats_request.execute()   
-
-    for video in stats_response['items']:
-        id = video['id']
-        stats = video['statistics']
-        for v in videos:
-            if v['id'] == id:
-                v['view_count'] = stats.get('viewCount', 0)
-                v['like_count'] = stats.get('likeCount', 0)
-                v['comment_count'] = stats.get('commentCount', 0) 
-
-    print(json.dumps(videos, indent=4))
+    print(f"\nWritten: {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
