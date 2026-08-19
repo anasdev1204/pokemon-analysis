@@ -115,6 +115,10 @@ def add_video_statistics(youtube, videos):
 
     return videos
 
+def load_existing_results():
+    with open(OUTPUT_PATH, "r", encoding="utf-8") as file:
+        return json.load(file)
+
 
 def main():
     os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
@@ -133,8 +137,19 @@ def main():
 
     results = {}
 
+    already_processed_sets = load_existing_results()
+
     for index, pkmn_set in enumerate(sets, start=1):
         set_name = pkmn_set["name"]
+
+        if set_name in already_processed_sets:
+            print(
+                f"[{index}/{len(sets)}] "
+                f"Skipping {set_name} (already processed)"
+            )
+            results[set_name] = already_processed_sets[set_name]
+            continue
+
         release_date = pkmn_set["releaseDate"]
 
         is_additional_name = pkmn_set["searchName"] if "searchName" in pkmn_set else None
