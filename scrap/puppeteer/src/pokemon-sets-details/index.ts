@@ -1363,27 +1363,34 @@ class PokemonSetDetailsScraper {
 
             await page.type(
                 '#identifier-field',
-                "abbanaslol@gmail.com"
+                "anas.abbouchu.04@gmail.com"
             );
+
+            await page.waitForSelector("#identifier-field");
+
+            await page.type(
+                '#password-field',
+                "1342_ECOmessi"
+            )
 
             await page.click('#main-content > div > div > div > div.cl-card.cl-signIn-start.🔒️.cl-internal-d5pd3d > div.cl-main.🔒️.cl-internal-vvtys3 > form > div.cl-internal-1pnppin > button');
 
-            await page.waitForSelector('input[autocomplete="one-time-code"]', {
-                timeout: 30000
-            });
+            // await page.waitForSelector('input[autocomplete="one-time-code"]', {
+            //     timeout: 30000
+            // });
 
-            const rl = readline.createInterface({ input, output });
+            // const rl = readline.createInterface({ input, output });
 
-            const code = await rl.question(
-                "Enter the verification code sent to your email: "
-            );
+            // const code = await rl.question(
+            //     "Enter the verification code sent to your email: "
+            // );
 
-            rl.close();
+            // rl.close();
 
-            await page.type(
-                'input[autocomplete="one-time-code"]',
-                code.trim()
-            );
+            // await page.type(
+            //     'input[autocomplete="one-time-code"]',
+            //     code.trim()
+            // );
 
             await page.waitForNavigation({
                 waitUntil: "networkidle2"
@@ -1490,7 +1497,7 @@ class PokemonSetDetailsScraper {
             return result;
         }, {});
 
-        // const page = await this.signInToPriceTracker();
+        const page = await this.signInToPriceTracker();
 
         for (const pkmnSet of this.sets) {
             if (!pkmnSet) {
@@ -1593,133 +1600,146 @@ class PokemonSetDetailsScraper {
                         }, {})
                     };
                 }) : [];
+
+            let hitLimit = false;
             
-            // for (let j = 0; j < hitsRarities.length; j++) {
-            //     const rarityData = hitsRarities[j];
+            for (let j = 0; j < hitsRarities.length; j++) {
+                if (hitLimit) {
+                    break;
+                }
 
-            //     if (!rarityData) {
-            //         continue;
-            //     }
+                const rarityData = hitsRarities[j];
 
-            //     for (let i = 0; i < rarityData.concernedCards.length; i++) {
-            //         const card = rarityData.concernedCards[i];
+                if (!rarityData) {
+                    continue;
+                }
 
-            //         if (!card) {
-            //             continue;
-            //         }
+                for (let i = 0; i < rarityData.concernedCards.length; i++) {
+                    const card = rarityData.concernedCards[i];
 
-            //          const cached = await this.getCardCache(
-            //             setName,
-            //             card.number
-            //         );
+                    if (!card) {
+                        continue;
+                    }
 
-            //         if (cached) {
-            //             console.log(
-            //                 `Using cached data for ${card.name} (${card.number})`
-            //             );
+                     const cached = await this.getCardCache(
+                        setName,
+                        card.number
+                    );
 
-            //             // @ts-expect-error
-            //             hitsRarities[j].concernedCards[i] = {
-            //                 ...card,
-            //                 ...cached
-            //             };
+                    if (cached) {
+                        console.log(
+                            `Using cached data for ${card.name} (${card.number})`
+                        );
 
-            //             continue;
-            //         }
+                        // @ts-expect-error
+                        hitsRarities[j].concernedCards[i] = {
+                            ...card,
+                            ...cached
+                        };
 
-            //         console.log(
-            //             `Scraping price data for ${card.name} (${card.number})`
-            //         );
+                        continue;
+                    }
 
-            //         const cardApiUrl =
-            //             cardsPerSet[setName]?.[card.number] ?? "";
+                    console.log(
+                        `Scraping price data for ${card.name} (${card.number})`
+                    );
 
-            //         if (!cardApiUrl) {
-            //             console.warn(
-            //                 `No API URL found for card ${card.name} (${card.number}) in set ${setName}`
-            //             );
-            //             continue;
-            //         }
+                    const cardApiUrl =
+                        cardsPerSet[setName]?.[card.number] ?? "";
 
-            //         try {
-            //             const {priceOnRelease, priceEvolution, ebaySoldVolumeFrom2026} = await this.scrapeCardPriceData(page, cardApiUrl);
+                    if (!cardApiUrl) {
+                        console.warn(
+                            `No API URL found for card ${card.name} (${card.number}) in set ${setName}`
+                        );
+                        continue;
+                    }
 
-            //             console.log("Scraped successfully for card:", card.name, "priceOnRelease:", priceOnRelease, "priceEvolution:", priceEvolution, "ebaySoldVolumeFrom2026:", ebaySoldVolumeFrom2026);
+                    try {
+                        const {priceOnRelease, priceEvolution, ebaySoldVolumeFrom2026} = await this.scrapeCardPriceData(page, cardApiUrl);
 
-            //             const priceData = {
-            //                 priceOnRelease,
-            //                 priceEvolution,
-            //                 ebaySoldVolumeFrom2026
-            //             };
+                        console.log("Scraped successfully for card:", card.name, "priceOnRelease:", priceOnRelease, "priceEvolution:", priceEvolution, "ebaySoldVolumeFrom2026:", ebaySoldVolumeFrom2026);
 
-            //             await this.saveCardCache(
-            //                 setName,
-            //                 card.number,
-            //                 priceData
-            //             );
+                        if (priceOnRelease === 0 && priceEvolution.length === 0 && ebaySoldVolumeFrom2026 === 0) {
+                            console.warn(
+                                `No price data found for ${card.name} (${card.number}) in set ${setName}`
+                            );
+                            hitLimit = true;
+                            break;
+                        }
 
-            //             // @ts-expect-error
-            //             hitsRarities[j].concernedCards[i] = {
-            //                 ...card,
-            //                 ...priceData
-            //             }
+                        const priceData = {
+                            priceOnRelease,
+                            priceEvolution,
+                            ebaySoldVolumeFrom2026
+                        };
 
-            //             const finalPokemonSet: PokemonSet = {
-            //                 name: setName,
-            //                 series: setSeries,
-            //                 number: "0",
-            //                 releaseDate: setReleaseDate,
-            //                 boosterPrice: boosterPrice,
-            //                 numberOfChases: setChaseCards?.length ?? 0,
-            //                 numberOfHits: setHitRates?.length ?? 0,
-            //                 chaseRatioOutOfHits: (setChaseCards?.length ?? 0) / (setHitRates?.length ?? 1),
-            //                 numberOfCards: Object.keys(setCards ?? {}).length,
-            //                 hitsRarities: hitsRarities
-            //             };
+                        await this.saveCardCache(
+                            setName,
+                            card.number,
+                            priceData
+                        );
 
-            //             result[setName] = finalPokemonSet;
+                        // @ts-expect-error
+                        hitsRarities[j].concernedCards[i] = {
+                            ...card,
+                            ...priceData
+                        }
+
+                        const finalPokemonSet: PokemonSet = {
+                            name: setName,
+                            series: setSeries,
+                            number: "0",
+                            releaseDate: setReleaseDate,
+                            boosterPrice: boosterPrice,
+                            numberOfChases: setChaseCards?.length ?? 0,
+                            numberOfHits: setHitRates?.length ?? 0,
+                            chaseRatioOutOfHits: (setChaseCards?.length ?? 0) / (setHitRates?.length ?? 1),
+                            numberOfCards: Object.keys(setCards ?? {}).length,
+                            hitsRarities: hitsRarities
+                        };
+
+                        result[setName] = finalPokemonSet;
                         
-            //             this.writeJson(
-            //                 result
-            //             );
+                        this.writeJson(
+                            result
+                        );
 
-            //             await new Promise(resolve =>
-            //                 setTimeout(resolve, 2000)
-            //             );
-            //         } catch (error) {
-            //             console.error(
-            //                 `Failed to fetch price data for ${card.name} (${card.number})`,
-            //                 error
-            //             );
-            //         }
-            //     }
-            // }
+                        await new Promise(resolve =>
+                            setTimeout(resolve, 2000)
+                        );
+                    } catch (error) {
+                        console.error(
+                            `Failed to fetch price data for ${card.name} (${card.number})`,
+                            error
+                        );
+                    }
+                }
+            }
 
-            // await new Promise(resolve => setTimeout(resolve, 1000));
+            await new Promise(resolve => setTimeout(resolve, 1000));
                 
+            if (hitLimit) {
+                break;
+            }
 
-            const finalPokemonSet: PokemonSet = {
-                name: setName,
-                series: setSeries,
-                number: "0",
-                releaseDate: setReleaseDate,
-                boosterPrice: boosterPrice,
-                numberOfChases: setChaseCards?.length ?? 0,
-                numberOfHits: setHitRates?.length ?? 0,
-                chaseRatioOutOfHits: (setChaseCards?.length ?? 0) / (setHitRates?.length ?? 1),
-                numberOfCards: Object.keys(setCards ?? {}).length,
-                hitsRarities: hitsRarities
-            };
+            // const finalPokemonSet: PokemonSet = {
+            //     name: setName,
+            //     series: setSeries,
+            //     number: "0",
+            //     releaseDate: setReleaseDate,
+            //     boosterPrice: boosterPrice,
+            //     numberOfChases: setChaseCards?.length ?? 0,
+            //     numberOfHits: setHitRates?.length ?? 0,
+            //     chaseRatioOutOfHits: (setChaseCards?.length ?? 0) / (setHitRates?.length ?? 1),
+            //     numberOfCards: Object.keys(setCards ?? {}).length,
+            //     hitsRarities: hitsRarities
+            // };
 
-            result[setName] = finalPokemonSet;
+            // result[setName] = finalPokemonSet;
             
-            this.writeJson(
-                result
-            );
-
-            await new Promise(resolve =>
-                setTimeout(resolve, 2000)
-            );
+            // this.writeJson(
+            //     result
+            // );
         }
 
         // console.log(finalPokemonSet);
