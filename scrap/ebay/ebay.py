@@ -278,6 +278,20 @@ for pokemon_set in pokemon_sets.values():
                     query
                 )
 
+                processed_items = []
+
+                for item in items:
+                    processed_item = {
+                        "itemId": item.get("itemId"),
+                        "title": item.get("title"),
+                        "publishDate": item.get("itemCreationDate"),
+                        "price": item.get("price", {}).get("value") + " " + item.get("price", {}).get("currency"),
+                        "condition": item.get("condition"),
+                        "itemWebUrl": item.get("itemWebUrl")
+                    }
+
+                    processed_items.append(processed_item)
+
                 # ------------------------------------------------
                 # Save result
                 # ------------------------------------------------
@@ -298,7 +312,7 @@ for pokemon_set in pokemon_sets.values():
 
                     "itemCount": len(items),
 
-                    "items": items
+                    "items": processed_items
                 }
 
                 # Save immediately
