@@ -1471,7 +1471,7 @@ class PokemonSetDetailsScraper {
     // ============================================================
     private async mergeData(): Promise<Record<string, PokemonSet>> {
         const data = await fs.readFile(
-            this.outputDirectory + "/pokemon-sets.json",
+            this.outputDirectory + "/processed/pokemon-sets.json",
             "utf8"
         );
 
