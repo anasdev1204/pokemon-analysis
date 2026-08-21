@@ -25,9 +25,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.693,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.31,
+            "priceEvolution": [
+              1.31,
+              1.55,
+              1.68,
+              1.43,
+              1.31,
+              1.32,
+              1.49,
+              1.48,
+              1.4,
+              1.76,
+              1.76,
+              1.81,
+              1.86
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Dhelmise V",
@@ -37,8 +51,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.44799999999999995,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.73,
+            "priceEvolution": [
+              0.73,
+              0.9,
+              0.72,
+              0.8,
+              0.83,
+              0.59,
+              0.75,
+              0.71,
+              0.69,
+              0.74,
+              0.7,
+              0.82,
+              0.81
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -49,9 +77,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.507,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 0.8,
+            "priceEvolution": [
+              0.8,
+              0.95,
+              1.04,
+              0.79,
+              0.91,
+              0.94,
+              0.89,
+              0.93,
+              1.06,
+              1.04,
+              1.01,
+              0.97,
+              0.98
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Victini V",
@@ -1742,8 +1784,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.557,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 3.71,
+            "priceEvolution": [
+              3.71,
+              4.1,
+              3.9,
+              4.22,
+              4.71,
+              4.57,
+              5.14,
+              4.83,
+              4.79,
+              5.24,
+              5.47,
+              5.31,
+              4.63
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -1754,9 +1810,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.46799999999999997,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.13,
+            "priceEvolution": [
+              2.13,
+              2.21,
+              2.05,
+              2.11,
+              2.21,
+              1.97,
+              2.25,
+              2.34,
+              2.45,
+              2.81,
+              3.04,
+              2.93,
+              2.96
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Toxtricity V",
@@ -1766,9 +1836,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.585,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.16,
+            "priceEvolution": [
+              3.16,
+              3.73,
+              3.63,
+              3.78,
+              4.3,
+              4.33,
+              4.6,
+              4.23,
+              4,
+              4.29,
+              5.12,
+              4.6,
+              5.11
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Dragapult V",
@@ -1778,8 +1862,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.6859999999999999,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 7.16,
+            "priceEvolution": [
+              7.16,
+              7.73,
+              9.96,
+              9.98,
+              9.31,
+              9.62,
+              10.78,
+              10.07,
+              11.04,
+              10.19,
+              13.52,
+              12.55,
+              11.86
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -1790,8 +1888,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.34700000000000003,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 1.79,
+            "priceEvolution": [
+              1.79,
+              1.73,
+              1.79,
+              1.77,
+              1.78,
+              1.63,
+              1.64,
+              1.71,
+              1.78,
+              1.68,
+              1.69,
+              1.87,
+              1.79
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -1802,8 +1914,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.57,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 2.43,
+            "priceEvolution": [
+              2.43,
+              2.42,
+              2.39,
+              2.58,
+              2.71,
+              2.66,
+              2.76,
+              3.19,
+              3.39,
+              3.46,
+              3.81,
+              3.84,
+              3.67
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -1814,9 +1940,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.52,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.21,
+            "priceEvolution": [
+              3.21,
+              3.89,
+              4.08,
+              3.82,
+              3.66,
+              3.78,
+              3.79,
+              3.75,
+              3.66,
+              3.81,
+              3.73,
+              4.01,
+              4.42
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Copperajah V",
@@ -1826,9 +1966,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.392,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.88,
+            "priceEvolution": [
+              1.88,
+              1.77,
+              1.77,
+              1.76,
+              1.86,
+              1.79,
+              1.84,
+              2.19,
+              2.02,
+              2.05,
+              2.1,
+              2.16,
+              2.19
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Dubwool V",
@@ -1838,8 +1992,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.44799999999999995,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 1.96,
+            "priceEvolution": [
+              1.96,
+              2.08,
+              2.05,
+              2.08,
+              2.24,
+              2.12,
+              2.22,
+              2.38,
+              2.21,
+              2.18,
+              2.29,
+              2.38,
+              2.23
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -1850,9 +2018,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 49.06,
+            "priceEvolution": [
+              49.06,
+              50.82,
+              50.17,
+              50.55,
+              51.71,
+              51.93,
+              56.13,
+              59.54,
+              64.67,
+              66.5,
+              67.59,
+              65.89,
+              61.19
+            ],
+            "ebaySoldVolumeFrom2026": 7
           },
           {
             "name": "Milo",
@@ -1862,9 +2044,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.57,
+            "priceEvolution": [
+              3.57,
+              3.32,
+              3.66,
+              3.31,
+              3.29,
+              2.54,
+              2.55,
+              2.68,
+              3.15,
+              3.35,
+              3.46,
+              3.56,
+              3.62
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Oleana",
@@ -1874,9 +2070,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 7.66,
+            "priceEvolution": [
+              7.66,
+              7.93,
+              7.97,
+              7.76,
+              7.6,
+              8.72,
+              8.11,
+              8.41,
+              8.25,
+              8.24,
+              8.45,
+              7.86,
+              7.6
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Sonia",
@@ -1886,9 +2096,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 20.65,
+            "priceEvolution": [
+              20.65,
+              20.09,
+              19.04,
+              18.96,
+              18.32,
+              17.25,
+              16.47,
+              18.39,
+              20.06,
+              20.26,
+              21.39,
+              21.08,
+              21.19
+            ],
+            "ebaySoldVolumeFrom2026": 4
           }
         ],
         "apiUrls": {
@@ -1927,9 +2151,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.499,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 10.72,
+            "priceEvolution": [
+              10.72,
+              10.74,
+              10.74,
+              10.42,
+              10.44,
+              9.5,
+              9.35,
+              10.02,
+              11.15,
+              11.58,
+              12.86,
+              13.71,
+              12.93
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Cinderace VMAX",
@@ -1939,9 +2177,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.613,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 16.48,
+            "priceEvolution": [
+              16.48,
+              16.54,
+              16.72,
+              17.01,
+              16.51,
+              16.06,
+              16.07,
+              16.15,
+              16.12,
+              16.39,
+              17.2,
+              18.25,
+              18.52
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Inteleon VMAX",
@@ -1951,9 +2203,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.557,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 8.7,
+            "priceEvolution": [
+              8.7,
+              8.57,
+              8.9,
+              9.17,
+              9.4,
+              9.29,
+              9.56,
+              9.66,
+              10.22,
+              10.82,
+              10.75,
+              11.59,
+              12.81
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Toxtricity VMAX",
@@ -1963,9 +2229,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.585,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 9.43,
+            "priceEvolution": [
+              9.43,
+              10.07,
+              10.3,
+              10.02,
+              11.43,
+              11.28,
+              11.43,
+              12.19,
+              14.29,
+              16.55,
+              20.59,
+              20.14,
+              20.21
+            ],
+            "ebaySoldVolumeFrom2026": 4
           },
           {
             "name": "Dragapult VMAX",
@@ -1975,9 +2255,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.6859999999999999,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 17.65,
+            "priceEvolution": [
+              17.65,
+              18.58,
+              19.75,
+              20.55,
+              20.05,
+              19.01,
+              19.53,
+              19.74,
+              20.02,
+              20.6,
+              22.11,
+              23.59,
+              24.44
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Malamar VMAX",
@@ -1987,8 +2281,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.52,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 7.06,
+            "priceEvolution": [
+              7.06,
+              7.73,
+              7.77,
+              7.52,
+              7.26,
+              6.77,
+              6.78,
+              7.05,
+              7.43,
+              7.61,
+              7.86,
+              7.99,
+              8.29
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -1999,9 +2307,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.392,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 7.35,
+            "priceEvolution": [
+              7.35,
+              7.59,
+              7.11,
+              7,
+              7.19,
+              7.25,
+              7.19,
+              8.7,
+              7.98,
+              7.8,
+              7.33,
+              7.58,
+              7.57
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Boss's Orders",
@@ -2011,9 +2333,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 33.44,
+            "priceEvolution": [
+              33.44,
+              35.38,
+              34.74,
+              34.55,
+              34.95,
+              35.39,
+              35.89,
+              35.9,
+              37.01,
+              39.15,
+              44.86,
+              46.6,
+              42.67
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Milo",
@@ -2023,9 +2359,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 5.56,
+            "priceEvolution": [
+              5.56,
+              5.7,
+              6.66,
+              6.98,
+              7.35,
+              6.81,
+              6.73,
+              6.74,
+              6.81,
+              6.62,
+              6.7,
+              6.7,
+              6.88
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Oleana",
@@ -2035,9 +2385,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 6.73,
+            "priceEvolution": [
+              6.73,
+              6.38,
+              6.54,
+              6.52,
+              6.39,
+              6.35,
+              6.27,
+              6.68,
+              6.78,
+              7.26,
+              7.14,
+              7.41,
+              7.41
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Sonia",
@@ -2047,9 +2411,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 12.75,
+            "priceEvolution": [
+              12.75,
+              13.1,
+              12.84,
+              11.62,
+              10.96,
+              11.53,
+              12.16,
+              12.1,
+              12.07,
+              12.53,
+              13.65,
+              13.55,
+              14.78
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Frosmoth",
@@ -2059,9 +2437,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.523,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 9.72,
+            "priceEvolution": [
+              9.72,
+              9.8,
+              10.32,
+              10.23,
+              10.4,
+              10.16,
+              10.56,
+              10.78,
+              11.74,
+              13.05,
+              15.23,
+              15.33,
+              14.37
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Galarian Perrserker",
@@ -2071,9 +2463,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.445,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 7.63,
+            "priceEvolution": [
+              7.63,
+              7.86,
+              7.79,
+              7.92,
+              8.11,
+              7.55,
+              7.77,
+              8.39,
+              9.38,
+              10.48,
+              11.33,
+              10.3,
+              9.88
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Big Charm",
@@ -2083,8 +2489,22 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 2.51,
+            "priceEvolution": [
+              2.51,
+              2.46,
+              2.16,
+              2.15,
+              2.29,
+              2.39,
+              2.5,
+              2.47,
+              2.25,
+              2.3,
+              2.35,
+              2.64,
+              2.4
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -2095,9 +2515,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 4.48,
+            "priceEvolution": [
+              4.48,
+              4.59,
+              4.01,
+              3.85,
+              4.12,
+              3.95,
+              4.46,
+              4.56,
+              4.53,
+              4.98,
+              5.24,
+              5.5,
+              5.47
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Tool Scrapper",
@@ -2107,8 +2541,22 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 24.07,
+            "priceEvolution": [
+              24.07,
+              21.96,
+              17.64,
+              14.48,
+              13.57,
+              11.81,
+              11.65,
+              12.11,
+              11.06,
+              11.78,
+              11.77,
+              11.27,
+              9.11
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -2119,9 +2567,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.47,
+            "priceEvolution": [
+              3.47,
+              3.49,
+              3.57,
+              3.46,
+              3.52,
+              3.45,
+              3.56,
+              3.79,
+              3.78,
+              3.83,
+              3.76,
+              3.95,
+              3.97
+            ],
+            "ebaySoldVolumeFrom2026": 2
           }
         ],
         "apiUrls": {
@@ -3279,9 +3741,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.36,
+            "priceEvolution": [
+              3.36,
+              3.8,
+              3.8,
+              3.69,
+              3.43,
+              3.09,
+              3.15,
+              3.08,
+              3.03,
+              3.39,
+              3.08,
+              3.25,
+              3.27
+            ],
+            "ebaySoldVolumeFrom2026": 4
           },
           {
             "name": "Rillaboom",
@@ -3291,9 +3767,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.499,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 5.6,
+            "priceEvolution": [
+              5.6,
+              5.95,
+              5.62,
+              6.42,
+              6.65,
+              5.63,
+              6.61,
+              6.35,
+              7.29,
+              6.98,
+              7.31,
+              7.33,
+              7.11
+            ],
+            "ebaySoldVolumeFrom2026": 8
           },
           {
             "name": "Coalossal",
@@ -3303,9 +3793,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.418,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 4.23,
+            "priceEvolution": [
+              4.23,
+              4.36,
+              4.89,
+              5.23,
+              5.94,
+              5.1,
+              5.07,
+              5.41,
+              5.35,
+              5.22,
+              5.63,
+              5.19,
+              4.95
+            ],
+            "ebaySoldVolumeFrom2026": 7
           },
           {
             "name": "Big Parasol",
@@ -3315,9 +3819,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2,
+            "priceEvolution": [
+              2,
+              2.27,
+              2.15,
+              2.18,
+              2.3,
+              2.14,
+              2.15,
+              2.13,
+              2.24,
+              2.06,
+              2.16,
+              2.2,
+              2.18
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Turbo Patch",
@@ -3327,8 +3845,22 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 2.5,
+            "priceEvolution": [
+              2.5,
+              2.68,
+              2.55,
+              2.71,
+              2.57,
+              2.48,
+              2.31,
+              2.36,
+              2.59,
+              2.47,
+              2.61,
+              2.68,
+              2.56
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -3339,9 +3871,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.93,
+            "priceEvolution": [
+              2.93,
+              3.14,
+              3.11,
+              2.9,
+              2.84,
+              2.89,
+              3.01,
+              3.09,
+              2.93,
+              3.09,
+              3.06,
+              2.94,
+              3.04
+            ],
+            "ebaySoldVolumeFrom2026": 1
           }
         ],
         "apiUrls": {
@@ -5236,9 +5782,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 4.88,
+            "priceEvolution": [
+              4.88,
+              5.82,
+              5.58,
+              5.37,
+              5.32,
+              4.98,
+              5.1,
+              6.59,
+              5.4,
+              6.48,
+              7.25,
+              6.94,
+              7.1
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Zinnia's Resolve",
@@ -5248,9 +5808,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 4.48,
+            "priceEvolution": [
+              4.48,
+              4.44,
+              4.92,
+              4.99,
+              4.29,
+              4.54,
+              4.58,
+              4.54,
+              6.45,
+              5.67,
+              5.8,
+              6.03,
+              5.91
+            ],
+            "ebaySoldVolumeFrom2026": 6
           }
         ],
         "apiUrls": {
@@ -5309,9 +5883,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.7509999999999999,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 28.46,
+            "priceEvolution": [
+              28.46,
+              30.15,
+              32.11,
+              31.93,
+              32.01,
+              31.77,
+              30.48,
+              31.56,
+              32.75,
+              34.41,
+              35.78,
+              41.15,
+              43.2
+            ],
+            "ebaySoldVolumeFrom2026": 10
           },
           {
             "name": "Leafeon VMAX",
@@ -5321,9 +5909,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.7509999999999999,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 357.62,
+            "priceEvolution": [
+              357.62,
+              382.39,
+              385.91,
+              376.73,
+              356.58,
+              332.04,
+              325.67,
+              321.07,
+              341.45,
+              366.46,
+              395.18,
+              417.01,
+              415.27
+            ],
+            "ebaySoldVolumeFrom2026": 33
           },
           {
             "name": "Trevenant VMAX",
@@ -5333,9 +5935,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.645,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 7.1,
+            "priceEvolution": [
+              7.1,
+              7.32,
+              6.99,
+              6.86,
+              6.83,
+              6.73,
+              7.03,
+              7.12,
+              7.55,
+              7.17,
+              7.3,
+              6.78,
+              6.92
+            ],
+            "ebaySoldVolumeFrom2026": 4
           },
           {
             "name": "Gyarados VMAX",
@@ -5345,9 +5961,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.6990000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 29.8,
+            "priceEvolution": [
+              29.8,
+              31,
+              33.35,
+              31.87,
+              33.86,
+              36.88,
+              35.95,
+              39.67,
+              42.25,
+              46.1,
+              47.84,
+              49.96,
+              49.62
+            ],
+            "ebaySoldVolumeFrom2026": 14
           },
           {
             "name": "Glaceon VMAX",
@@ -5357,9 +5987,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.721,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 26.86,
+            "priceEvolution": [
+              26.86,
+              30.23,
+              30.9,
+              29.49,
+              28.87,
+              29.22,
+              29.18,
+              32.75,
+              34.41,
+              36.6,
+              36.24,
+              37.77,
+              38.48
+            ],
+            "ebaySoldVolumeFrom2026": 9
           },
           {
             "name": "Glaceon VMAX",
@@ -5369,9 +6013,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.721,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 265.38,
+            "priceEvolution": [
+              265.38,
+              275.7,
+              298.22,
+              298.4,
+              296.72,
+              279.72,
+              261.35,
+              246.97,
+              265.92,
+              277.79,
+              295.23,
+              303.57,
+              309.51
+            ],
+            "ebaySoldVolumeFrom2026": 48
           },
           {
             "name": "Dracozolt VMAX",
@@ -5381,9 +6039,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.418,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 6.92,
+            "priceEvolution": [
+              6.92,
+              7.14,
+              7.69,
+              7.47,
+              7.17,
+              6.43,
+              6.69,
+              7.48,
+              8.41,
+              8.13,
+              7.62,
+              8.4,
+              8.34
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Sylveon VMAX",
@@ -5393,9 +6065,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.78,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 38.99,
+            "priceEvolution": [
+              38.99,
+              43.22,
+              44.84,
+              46.08,
+              49.68,
+              50.22,
+              50.86,
+              51.24,
+              51.96,
+              53.8,
+              57.14,
+              58.51,
+              61.76
+            ],
+            "ebaySoldVolumeFrom2026": 10
           },
           {
             "name": "Sylveon VMAX",
@@ -5405,9 +6091,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.78,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 288.58,
+            "priceEvolution": [
+              288.58,
+              314.7,
+              401.34,
+              408.78,
+              360.55,
+              344.18,
+              335.51,
+              315.19,
+              354.25,
+              371.69,
+              388.81,
+              406.67,
+              402.2
+            ],
+            "ebaySoldVolumeFrom2026": 17
           },
           {
             "name": "Lycanroc VMAX",
@@ -5417,9 +6117,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.688,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 6.77,
+            "priceEvolution": [
+              6.77,
+              7.64,
+              7.95,
+              7.76,
+              8.36,
+              8.41,
+              9.55,
+              8.68,
+              8.58,
+              9.73,
+              8.96,
+              9.35,
+              9.58
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Umbreon VMAX",
@@ -5429,9 +6143,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.795,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 49.74,
+            "priceEvolution": [
+              49.74,
+              56.49,
+              59.13,
+              56.48,
+              53.14,
+              57.99,
+              58.36,
+              60.26,
+              64.44,
+              71.63,
+              75.87,
+              77.31,
+              84.74
+            ],
+            "ebaySoldVolumeFrom2026": 23
           },
           {
             "name": "Umbreon VMAX",
@@ -5441,9 +6169,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.795,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1369.41,
+            "priceEvolution": [
+              1369.41,
+              2226.86,
+              2285.4,
+              2184.63,
+              1924.42,
+              1791.97,
+              1678.17,
+              1809.89,
+              1954.99,
+              2004.36,
+              2271.3,
+              2396.28,
+              2244.47
+            ],
+            "ebaySoldVolumeFrom2026": 103
           },
           {
             "name": "Garbodor VMAX",
@@ -5453,9 +6195,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.389,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 7.09,
+            "priceEvolution": [
+              7.09,
+              7.38,
+              7.7,
+              7.56,
+              7.26,
+              8.09,
+              7.15,
+              7.6,
+              7.83,
+              8.1,
+              8.14,
+              8.93,
+              8.65
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Rayquaza VMAX",
@@ -5465,9 +6221,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.764,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 44.03,
+            "priceEvolution": [
+              44.03,
+              51.29,
+              69.62,
+              76.21,
+              72.33,
+              70.31,
+              68.17,
+              70.79,
+              88.02,
+              108.34,
+              118.28,
+              128,
+              126.94
+            ],
+            "ebaySoldVolumeFrom2026": 31
           },
           {
             "name": "Rayquaza VMAX",
@@ -5477,9 +6247,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.764,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 664.95,
+            "priceEvolution": [
+              664.95,
+              673.87,
+              690.31,
+              704.76,
+              697.95,
+              662.49,
+              658.34,
+              686.74,
+              778.28,
+              843.98,
+              1055.07,
+              1224.43,
+              1247.9
+            ],
+            "ebaySoldVolumeFrom2026": 100
           },
           {
             "name": "Duraludon VMAX",
@@ -5489,9 +6273,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.423,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 6.65,
+            "priceEvolution": [
+              6.65,
+              6.51,
+              6.66,
+              6.72,
+              6.6,
+              5.88,
+              6.19,
+              7.09,
+              7.41,
+              7.11,
+              7.07,
+              6.91,
+              6.82
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Duraludon VMAX",
@@ -5501,9 +6299,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.423,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 17.44,
+            "priceEvolution": [
+              17.44,
+              19.25,
+              20.16,
+              20.02,
+              19.13,
+              17.01,
+              18.34,
+              18.64,
+              19.51,
+              19.83,
+              19.53,
+              17.45,
+              15.96
+            ],
+            "ebaySoldVolumeFrom2026": 7
           },
           {
             "name": "Aroma Lady",
@@ -5513,9 +6325,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 5.23,
+            "priceEvolution": [
+              5.23,
+              5.33,
+              4.82,
+              4.79,
+              5.26,
+              5.08,
+              5,
+              5.18,
+              6.76,
+              6.32,
+              5.61,
+              5.85,
+              6.07
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Copycat",
@@ -5525,9 +6351,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 4.48,
+            "priceEvolution": [
+              4.48,
+              4.8,
+              4.48,
+              4.55,
+              4.54,
+              4.59,
+              4.3,
+              4.62,
+              4.27,
+              4.56,
+              4.67,
+              4.94,
+              4.67
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Gordie",
@@ -5537,9 +6377,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.1,
+            "priceEvolution": [
+              3.1,
+              3.53,
+              3.47,
+              2.92,
+              3.03,
+              2.92,
+              2.4,
+              3.01,
+              3.18,
+              3.04,
+              2.85,
+              2.95,
+              3.52
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Raihan",
@@ -5549,9 +6403,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 4.6,
+            "priceEvolution": [
+              4.6,
+              4.51,
+              4.3,
+              4.32,
+              4.42,
+              4.75,
+              4.38,
+              4.61,
+              4.94,
+              6.52,
+              6.22,
+              5.6,
+              5.53
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Zinnia's Resolve",
@@ -5561,9 +6429,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 5.19,
+            "priceEvolution": [
+              5.19,
+              5.94,
+              5.78,
+              5.56,
+              5.42,
+              5.79,
+              5.51,
+              6.13,
+              5.14,
+              5.81,
+              5.99,
+              5.98,
+              6.23
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Froslass",
@@ -5573,9 +6455,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.655,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 5.38,
+            "priceEvolution": [
+              5.38,
+              6.53,
+              6.31,
+              6.54,
+              7.27,
+              7.35,
+              6.86,
+              7.68,
+              7.65,
+              9.59,
+              13.69,
+              12.15,
+              10.88
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Inteleon",
@@ -5585,9 +6481,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.557,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 7.7,
+            "priceEvolution": [
+              7.7,
+              7.76,
+              7.35,
+              7.57,
+              7.71,
+              6.89,
+              7.31,
+              7.9,
+              9.17,
+              8.82,
+              10.2,
+              11.86,
+              11.25
+            ],
+            "ebaySoldVolumeFrom2026": 5
           },
           {
             "name": "Cresselia",
@@ -5597,9 +6507,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.5920000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 9.42,
+            "priceEvolution": [
+              9.42,
+              10.11,
+              9.81,
+              10.33,
+              10.82,
+              10.57,
+              10.57,
+              10.01,
+              11.58,
+              12.45,
+              13.93,
+              12.93,
+              12.98
+            ],
+            "ebaySoldVolumeFrom2026": 4
           },
           {
             "name": "Boost Shake",
@@ -5609,9 +6533,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.26,
+            "priceEvolution": [
+              2.26,
+              2.71,
+              2.44,
+              2.16,
+              2,
+              2.06,
+              2.08,
+              2.26,
+              2.32,
+              2.51,
+              2.62,
+              2.7,
+              2.39
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Crystal Cave",
@@ -5621,9 +6559,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.26,
+            "priceEvolution": [
+              3.26,
+              3.96,
+              3.75,
+              3.86,
+              3.65,
+              3.77,
+              4.36,
+              5.28,
+              4.27,
+              4.63,
+              4.79,
+              4.68,
+              4.55
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Full Face Guard",
@@ -5633,9 +6585,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.49,
+            "priceEvolution": [
+              2.49,
+              2.52,
+              2.36,
+              2.37,
+              2.33,
+              2.67,
+              2.55,
+              2.49,
+              2.56,
+              2.76,
+              2.45,
+              2.66,
+              2.51
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Stormy Mountains",
@@ -5645,8 +6611,22 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 4.12,
+            "priceEvolution": [
+              4.12,
+              4.12,
+              3.98,
+              4.16,
+              4.16,
+              3.83,
+              3.49,
+              3.87,
+              3.73,
+              3.77,
+              3.78,
+              4.55,
+              4.11
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -5657,9 +6637,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.65,
+            "priceEvolution": [
+              2.65,
+              2.63,
+              2.47,
+              2.78,
+              2.57,
+              2.53,
+              2.34,
+              2.42,
+              2.79,
+              2.9,
+              2.43,
+              2.73,
+              2.52
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Turffield Stadium",
@@ -5669,9 +6663,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.41,
+            "priceEvolution": [
+              3.41,
+              3.46,
+              3.65,
+              3.32,
+              3.22,
+              3.19,
+              3.01,
+              3.45,
+              3.49,
+              3.4,
+              3.07,
+              3.9,
+              3.77
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Lightning Energy",
@@ -5681,9 +6689,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 9.66,
+            "priceEvolution": [
+              9.66,
+              10.32,
+              8.88,
+              8.64,
+              8.28,
+              7.19,
+              7.34,
+              7.64,
+              7.33,
+              7.54,
+              8.1,
+              7.88,
+              8.42
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Darkness Energy",
@@ -5693,9 +6715,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 22.06,
+            "priceEvolution": [
+              22.06,
+              20.43,
+              20.64,
+              20.63,
+              20.83,
+              23.83,
+              23.5,
+              24.21,
+              31.98,
+              37.65,
+              34.31,
+              24.22,
+              24.99
+            ],
+            "ebaySoldVolumeFrom2026": 5
           },
           {
             "name": "Metal Energy",
@@ -5705,9 +6741,23 @@
             "isPromo": false,
             "isPokemon": false,
             "pokemonPopularity": 0,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 14.09,
+            "priceEvolution": [
+              14.09,
+              14.9,
+              13.44,
+              13.86,
+              13.63,
+              12.11,
+              11.5,
+              11.63,
+              12.35,
+              11.76,
+              11.27,
+              10.74,
+              11.77
+            ],
+            "ebaySoldVolumeFrom2026": 1
           }
         ],
         "apiUrls": {
@@ -15429,8 +16479,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.738,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.78,
+            "priceEvolution": [
+              0.78,
+              0.74,
+              0.74,
+              0.83,
+              0.77,
+              0.76,
+              0.79,
+              0.71,
+              0.76,
+              0.98,
+              0.95,
+              0.82,
+              0.84
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15441,8 +16505,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.5,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.72,
+            "priceEvolution": [
+              0.72,
+              0.69,
+              0.77,
+              0.78,
+              0.57,
+              0.64,
+              0.72,
+              0.74,
+              0.79,
+              0.73,
+              0.75,
+              0.72,
+              0.72
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15453,8 +16531,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.502,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.82,
+            "priceEvolution": [
+              0.82,
+              0.67,
+              0.93,
+              0.85,
+              0.76,
+              0.77,
+              0.79,
+              0.89,
+              1,
+              0.88,
+              0.97,
+              0.83,
+              0.85
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15465,9 +16557,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.726,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 0.94,
+            "priceEvolution": [
+              0.94,
+              0.95,
+              1.13,
+              0.89,
+              0.95,
+              0.89,
+              0.93,
+              1.05,
+              1.12,
+              1.32,
+              1.56,
+              1.68,
+              1.49
+            ],
+            "ebaySoldVolumeFrom2026": 27
           },
           {
             "name": "Hisuian Samurott V",
@@ -15477,9 +16583,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.655,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 0.77,
+            "priceEvolution": [
+              0.77,
+              0.73,
+              0.73,
+              0.84,
+              0.78,
+              0.77,
+              0.87,
+              0.8,
+              0.75,
+              1.04,
+              0.96,
+              0.98,
+              0.9
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Origin Forme Dialga V",
@@ -15489,8 +16609,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.7140000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 1.11,
+            "priceEvolution": [
+              1.11,
+              1.26,
+              1.26,
+              1.13,
+              1.1,
+              1.11,
+              1.08,
+              1.23,
+              1.19,
+              1.1,
+              1.44,
+              1.31,
+              1.38
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15501,9 +16635,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.726,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 0.93,
+            "priceEvolution": [
+              0.93,
+              0.8,
+              1.1,
+              0.99,
+              0.85,
+              1.09,
+              0.98,
+              1.09,
+              1.03,
+              1.28,
+              1.12,
+              1.29,
+              1.37
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Oranguru V",
@@ -15513,8 +16661,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.371,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.71,
+            "priceEvolution": [
+              0.71,
+              0.74,
+              0.85,
+              0.82,
+              0.8,
+              0.67,
+              0.68,
+              0.69,
+              0.68,
+              0.84,
+              0.76,
+              0.76,
+              0.74
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15525,9 +16687,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.488,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 0.79,
+            "priceEvolution": [
+              0.79,
+              0.66,
+              0.66,
+              0.86,
+              0.7,
+              0.66,
+              0.71,
+              0.79,
+              0.9,
+              1.01,
+              0.9,
+              0.62,
+              0.77
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Starmie V",
@@ -15537,8 +16713,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.578,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.71,
+            "priceEvolution": [
+              0.71,
+              0.74,
+              0.85,
+              0.82,
+              0.8,
+              0.67,
+              0.68,
+              0.69,
+              0.68,
+              0.84,
+              0.76,
+              0.76,
+              0.74
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15549,8 +16739,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.34600000000000003,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.12,
+            "priceEvolution": [
+              0.12,
+              0.12,
+              0.12,
+              0.12,
+              0.1,
+              0.09,
+              0.16,
+              0.15,
+              0.21,
+              0.2,
+              0.16,
+              0.08,
+              0.19
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15561,9 +16765,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.695,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 16.46,
+            "priceEvolution": [
+              16.46,
+              18.45,
+              19.53,
+              18.55,
+              17.67,
+              18.16,
+              18.75,
+              19.47,
+              20.42,
+              24.17,
+              28.18,
+              29.83,
+              27.28
+            ],
+            "ebaySoldVolumeFrom2026": 15
           },
           {
             "name": "Shadow Rider Calyrex V",
@@ -15573,8 +16791,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.34600000000000003,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 1.6,
+            "priceEvolution": [
+              1.6,
+              1.49,
+              1.52,
+              1.51,
+              1.57,
+              1.65,
+              1.82,
+              1.81,
+              1.87,
+              1.94,
+              1.89,
+              2.07,
+              1.98
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15585,9 +16817,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.6609999999999999,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 9.86,
+            "priceEvolution": [
+              9.86,
+              11.31,
+              10.77,
+              10.96,
+              11.03,
+              10.66,
+              10.66,
+              11.7,
+              12.47,
+              12.02,
+              12.5,
+              13.23,
+              15.05
+            ],
+            "ebaySoldVolumeFrom2026": 4
           },
           {
             "name": "Galarian Moltres V",
@@ -15597,9 +16843,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.5670000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 3.68,
+            "priceEvolution": [
+              3.68,
+              4.11,
+              3.65,
+              3.47,
+              3.73,
+              3.54,
+              2.93,
+              3.18,
+              2.99,
+              3.22,
+              3.29,
+              3.61,
+              3.54
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Zacian V",
@@ -15609,9 +16869,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.606,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 5.33,
+            "priceEvolution": [
+              5.33,
+              5.73,
+              6.24,
+              5.72,
+              5.68,
+              5.53,
+              6.64,
+              6.31,
+              7.39,
+              7.43,
+              8.57,
+              9.89,
+              9.59
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Zamazenta V",
@@ -15681,9 +16955,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.621,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.3,
+            "priceEvolution": [
+              1.3,
+              1.38,
+              1.64,
+              1.4,
+              1.44,
+              1.32,
+              1.37,
+              1.44,
+              1.65,
+              1.6,
+              1.71,
+              1.84,
+              1.72
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Origin Forme Palkia VSTAR",
@@ -15693,9 +16981,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.63,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.19,
+            "priceEvolution": [
+              1.19,
+              1.45,
+              1.23,
+              1.22,
+              1.2,
+              1.02,
+              1.1,
+              1.29,
+              1.41,
+              1.27,
+              1.64,
+              1.5,
+              1.32
+            ],
+            "ebaySoldVolumeFrom2026": 6
           },
           {
             "name": "Hisuian Typhlosion VSTAR",
@@ -15705,9 +17007,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.715,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.57,
+            "priceEvolution": [
+              1.57,
+              1.57,
+              1.54,
+              1.83,
+              1.67,
+              1.67,
+              1.6,
+              1.9,
+              1.89,
+              1.92,
+              2.12,
+              2.67,
+              2.04
+            ],
+            "ebaySoldVolumeFrom2026": 2
           },
           {
             "name": "Hisuian Decidueye VSTAR",
@@ -15717,9 +17033,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.738,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.19,
+            "priceEvolution": [
+              1.19,
+              1.23,
+              1.22,
+              1.28,
+              1.22,
+              1.24,
+              1.26,
+              1.21,
+              1.41,
+              1.55,
+              1.43,
+              1.51,
+              1.18
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Darkrai VSTAR",
@@ -15729,9 +17059,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.726,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.39,
+            "priceEvolution": [
+              1.39,
+              1.23,
+              1.66,
+              1.36,
+              1.22,
+              1.66,
+              1.36,
+              1.58,
+              1.68,
+              1.94,
+              2.03,
+              2.57,
+              2.31
+            ],
+            "ebaySoldVolumeFrom2026": 21
           },
           {
             "name": "Hisuian Samurott VSTAR",
@@ -15741,9 +17085,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.655,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.5,
+            "priceEvolution": [
+              1.5,
+              1.35,
+              1.47,
+              1.59,
+              1.5,
+              1.53,
+              1.5,
+              1.56,
+              1.53,
+              1.73,
+              1.5,
+              1.62,
+              1.65
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Origin Forme Dialga VSTAR",
@@ -15753,9 +17111,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.7140000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.49,
+            "priceEvolution": [
+              1.49,
+              1.59,
+              1.59,
+              1.53,
+              1.42,
+              1.59,
+              1.41,
+              1.53,
+              1.65,
+              1.73,
+              2.14,
+              1.96,
+              1.93
+            ],
+            "ebaySoldVolumeFrom2026": 4
           }
         ],
         "apiUrls": {
@@ -15783,8 +17155,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.425,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 1.75,
+            "priceEvolution": [
+              1.75,
+              1.83,
+              1.9,
+              1.68,
+              1.58,
+              1.43,
+              1.5,
+              1.54,
+              1.79,
+              1.76,
+              1.82,
+              1.78,
+              1.71
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15795,9 +17181,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.5660000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 4.66,
+            "priceEvolution": [
+              4.66,
+              5.52,
+              5.62,
+              5.38,
+              4.97,
+              4.79,
+              5.46,
+              5.25,
+              6.03,
+              5.82,
+              6.74,
+              6.52,
+              6.31
+            ],
+            "ebaySoldVolumeFrom2026": 11
           },
           {
             "name": "Ice Rider Calyrex VMAX",
@@ -15807,8 +17207,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.34600000000000003,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.1,
+            "priceEvolution": [
+              0.1,
+              0.1,
+              0.1,
+              0.11,
+              0.06,
+              0.08,
+              0.08,
+              0.13,
+              0.13,
+              0.12,
+              0.19,
+              0.06,
+              0.12
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15819,8 +17233,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.34600000000000003,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 1.88,
+            "priceEvolution": [
+              1.88,
+              1.92,
+              1.96,
+              2.06,
+              1.88,
+              1.73,
+              1.58,
+              1.96,
+              1.97,
+              1.93,
+              2,
+              2.34,
+              2.34
+            ],
             "ebaySoldVolumeFrom2026": 0
           }
         ],
@@ -15846,8 +17274,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.425,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 0.44,
+            "priceEvolution": [
+              0.44,
+              0.44,
+              0.45,
+              0.34,
+              0.4,
+              0.44,
+              0.54,
+              0.59,
+              0.62,
+              0.62,
+              0.66,
+              0.64,
+              0.55
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15858,9 +17300,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.72,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.96,
+            "priceEvolution": [
+              1.96,
+              3.63,
+              3.05,
+              2.09,
+              2.01,
+              2.09,
+              2.14,
+              2.84,
+              3.12,
+              3.82,
+              4.81,
+              3.41,
+              3.64
+            ],
+            "ebaySoldVolumeFrom2026": 35
           },
           {
             "name": "Radiant Hawlucha",
@@ -15870,9 +17326,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.5920000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 0.47,
+            "priceEvolution": [
+              0.47,
+              0.48,
+              0.56,
+              0.46,
+              0.56,
+              0.45,
+              0.52,
+              0.63,
+              0.69,
+              0.75,
+              0.69,
+              0.82,
+              0.67
+            ],
+            "ebaySoldVolumeFrom2026": 3
           }
         ],
         "apiUrls": {
@@ -15896,9 +17366,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.595,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.96,
+            "priceEvolution": [
+              2.96,
+              3.16,
+              3.33,
+              3.04,
+              3.12,
+              3.08,
+              3.43,
+              3.56,
+              3.46,
+              4.22,
+              4.25,
+              4.2,
+              4.1
+            ],
+            "ebaySoldVolumeFrom2026": 4
           },
           {
             "name": "Beedrill V",
@@ -15908,9 +17392,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.595,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 36.76,
+            "priceEvolution": [
+              36.76,
+              43.21,
+              45.4,
+              41.61,
+              40.21,
+              41.49,
+              45.48,
+              51.78,
+              55.65,
+              63.86,
+              75.1,
+              82.34,
+              81.61
+            ],
+            "ebaySoldVolumeFrom2026": 17
           },
           {
             "name": "Hisuian Lilligant V",
@@ -15920,9 +17418,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.621,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.1,
+            "priceEvolution": [
+              2.1,
+              2.25,
+              2.1,
+              2.29,
+              2.77,
+              2.79,
+              2.4,
+              2.4,
+              2.9,
+              2.99,
+              3.09,
+              3.43,
+              3.99
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Hisuian Lilligant V",
@@ -15932,9 +17444,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.621,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 16.46,
+            "priceEvolution": [
+              16.46,
+              18.45,
+              19.53,
+              18.55,
+              17.67,
+              18.16,
+              18.75,
+              19.47,
+              20.42,
+              24.17,
+              28.18,
+              29.83,
+              27.28
+            ],
+            "ebaySoldVolumeFrom2026": 15
           },
           {
             "name": "Virizion V",
@@ -15944,9 +17470,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.5660000000000001,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 1.83,
+            "priceEvolution": [
+              1.83,
+              1.79,
+              1.81,
+              1.8,
+              1.74,
+              1.67,
+              1.87,
+              1.87,
+              1.69,
+              1.99,
+              1.99,
+              2.13,
+              2.11
+            ],
+            "ebaySoldVolumeFrom2026": 3
           },
           {
             "name": "Heatran V",
@@ -15956,8 +17496,22 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.425,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
+            "priceOnRelease": 1.83,
+            "priceEvolution": [
+              1.83,
+              1.96,
+              1.91,
+              1.79,
+              1.68,
+              1.73,
+              1.68,
+              1.89,
+              2.02,
+              1.79,
+              1.82,
+              2.05,
+              2.14
+            ],
             "ebaySoldVolumeFrom2026": 0
           },
           {
@@ -15968,9 +17522,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.578,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 2.7,
+            "priceEvolution": [
+              2.7,
+              2.62,
+              2.6,
+              2.55,
+              2.6,
+              2.75,
+              2.69,
+              2.88,
+              3.12,
+              3.57,
+              3.79,
+              3.56,
+              4.29
+            ],
+            "ebaySoldVolumeFrom2026": 1
           },
           {
             "name": "Origin Forme Palkia V",
@@ -15980,9 +17548,23 @@
             "isPromo": false,
             "isPokemon": true,
             "pokemonPopularity": 0.63,
-            "priceOnRelease": 0,
-            "priceEvolution": [],
-            "ebaySoldVolumeFrom2026": 0
+            "priceOnRelease": 59.89,
+            "priceEvolution": [
+              59.89,
+              81.47,
+              84.25,
+              79.57,
+              69.61,
+              68.76,
+              73.07,
+              71.06,
+              76.38,
+              84.72,
+              93.66,
+              93.35,
+              94.01
+            ],
+            "ebaySoldVolumeFrom2026": 30
           },
           {
             "name": "Luxray V",
@@ -27391,6 +28973,1762 @@
           "228": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=509989&days=365&language=english",
           "229": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=509990&days=365&language=english",
           "230": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=509992&days=365&language=english"
+        }
+      }
+    ]
+  },
+  "Paradox Rift": {
+    "name": "Paradox Rift",
+    "series": "Scarlet & Violet Series",
+    "number": "0",
+    "releaseDate": "November 03, 2023",
+    "boosterPrice": 8.41,
+    "numberOfChases": 3,
+    "numberOfHits": 104,
+    "chaseRatioOutOfHits": 0.028846153846153848,
+    "numberOfCards": 266,
+    "hitsRarities": [
+      {
+        "rarity": "Double Rare",
+        "pullRate": 0.16666666666666666,
+        "numberOfCards": 20,
+        "specificCardPullRate": 0.008333333333333333,
+        "costPerPull": 1009.2,
+        "concernedCards": [
+          {
+            "name": "Froslass ex",
+            "number": "003",
+            "image": "https://static.tcgcollector.com/content/images/b0/c0/b2/b0c0b232e8f6507b8ccb448e6d03354b05c3e41b1165bb74b7c0667a8c38315b.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.655,
+            "priceOnRelease": 0.67,
+            "priceEvolution": [
+              0.67,
+              0.64,
+              0.6,
+              0.73,
+              0.6,
+              0.75,
+              0.67,
+              0.71,
+              0.64,
+              0.71,
+              0.98,
+              0.79,
+              0.77
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Armarouge ex",
+            "number": "027",
+            "image": "https://static.tcgcollector.com/content/images/bb/98/b0/bb98b0bd689c254c3afa7daa90e97b5e7d13b123f762fe66fce707ef4f613f76.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.575,
+            "priceOnRelease": 0.67,
+            "priceEvolution": [
+              0.67,
+              0.71,
+              0.67,
+              0.74,
+              0.78,
+              0.58,
+              0.74,
+              0.77,
+              0.68,
+              0.75,
+              0.87,
+              0.87,
+              0.93
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Garchomp ex",
+            "number": "038",
+            "image": "https://static.tcgcollector.com/content/images/1c/69/08/1c6908588f49c8c833f7e10ac63f05c66107a1afbbd45e9a0bbc0b15a6ef012e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.726,
+            "priceOnRelease": 0.78,
+            "priceEvolution": [
+              0.78,
+              0.87,
+              0.82,
+              0.63,
+              0.7,
+              0.7,
+              0.71,
+              0.75,
+              0.98,
+              0.9,
+              1.03,
+              1.11,
+              0.91
+            ],
+            "ebaySoldVolumeFrom2026": 1
+          },
+          {
+            "name": "Tsareena ex",
+            "number": "046",
+            "image": "https://static.tcgcollector.com/content/images/e7/97/fb/e797fb182eb264c7c57433e48e8654fbc0de0442376a6e1e65db3e6d438e2b49.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.556,
+            "priceOnRelease": 0.68,
+            "priceEvolution": [
+              0.68,
+              0.75,
+              0.55,
+              0.73,
+              0.56,
+              0.63,
+              0.77,
+              0.62,
+              0.65,
+              0.79,
+              0.79,
+              0.7,
+              0.69
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Golisopod ex",
+            "number": "050",
+            "image": "https://static.tcgcollector.com/content/images/82/04/82/820482abc69c709f7370bfb4ac79266196c8cc8dc042852145e4782bf5215dfd.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.565,
+            "priceOnRelease": 0.62,
+            "priceEvolution": [
+              0.62,
+              0.68,
+              0.7,
+              0.72,
+              0.58,
+              0.57,
+              0.62,
+              0.59,
+              0.67,
+              0.79,
+              0.68,
+              0.68,
+              0.64
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Mewtwo ex",
+            "number": "058",
+            "image": "https://static.tcgcollector.com/content/images/02/96/f9/0296f96663f5e0b920dbfe07e4e4f4bbfcdfd2ff6c3fdc0cc6dbbc712205af65.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.747,
+            "priceOnRelease": 1.56,
+            "priceEvolution": [
+              1.56,
+              1.83,
+              1.86,
+              1.71,
+              1.56,
+              1.84,
+              1.96,
+              2.13,
+              2.27,
+              2.84,
+              2.52,
+              2.65,
+              2.26
+            ],
+            "ebaySoldVolumeFrom2026": 10
+          },
+          {
+            "name": "Tapu Koko ex",
+            "number": "068",
+            "image": "https://static.tcgcollector.com/content/images/a8/96/47/a89647aab28ecf9b8faac3496b355605439a3c8ac9273e15b9e64ed7f656d91e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.5770000000000001,
+            "priceOnRelease": 0.65,
+            "priceEvolution": [
+              0.65,
+              0.68,
+              0.56,
+              0.67,
+              0.56,
+              0.62,
+              0.6,
+              0.59,
+              0.65,
+              0.72,
+              0.73,
+              0.51,
+              0.62
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Hands ex",
+            "number": "070",
+            "image": "https://static.tcgcollector.com/content/images/79/ba/dd/79badd2e54f357ed87c915446d225df1c881bad129ae6870e556452c1276cb47.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.39799999999999996,
+            "priceOnRelease": 1.54,
+            "priceEvolution": [
+              1.54,
+              1.49,
+              0.88,
+              0.7,
+              0.64,
+              0.73,
+              0.75,
+              0.75,
+              0.65,
+              0.86,
+              1.09,
+              0.88,
+              0.99
+            ],
+            "ebaySoldVolumeFrom2026": 2
+          },
+          {
+            "name": "Cofagrigus ex",
+            "number": "076",
+            "image": "https://static.tcgcollector.com/content/images/f9/7b/7a/f97b7a8573cd183ff35322b631038c59bf720a2134a6eef49dc59c498d9f806b.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.59,
+            "priceOnRelease": 0.66,
+            "priceEvolution": [
+              0.66,
+              0.57,
+              0.65,
+              0.7,
+              0.56,
+              0.52,
+              0.66,
+              0.52,
+              0.72,
+              0.79,
+              0.75,
+              0.62,
+              0.66
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Valiant ex",
+            "number": "089",
+            "image": "https://static.tcgcollector.com/content/images/eb/5a/5b/eb5a5b1e04b76282d2d48dae82ed8a4549609a20a360761df16ab4b72773dbdb.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.63,
+            "priceOnRelease": 0.76,
+            "priceEvolution": [
+              0.76,
+              0.7,
+              0.62,
+              1,
+              0.76,
+              0.67,
+              0.75,
+              0.73,
+              0.72,
+              0.89,
+              0.74,
+              0.73,
+              0.78
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Hoopa ex",
+            "number": "098",
+            "image": "https://static.tcgcollector.com/content/images/18/75/81/1875814b33c30fa84dd189cde70340eb7d53dc5f67677120bde7c01f7cb37b49.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.49,
+            "priceOnRelease": 0.64,
+            "priceEvolution": [
+              0.64,
+              0.73,
+              0.64,
+              0.74,
+              0.73,
+              0.71,
+              0.72,
+              0.83,
+              0.74,
+              0.76,
+              0.9,
+              0.83,
+              0.73
+            ],
+            "ebaySoldVolumeFrom2026": 1
+          },
+          {
+            "name": "Toxtricity ex",
+            "number": "100",
+            "image": "https://static.tcgcollector.com/content/images/55/bd/8e/55bd8ea077ea5d8b4a69bded50e011c2868a0960adcdb15f916b3b2dc8168c8f.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.585,
+            "priceOnRelease": 0.59,
+            "priceEvolution": [
+              0.59,
+              0.77,
+              0.69,
+              0.71,
+              0.57,
+              0.57,
+              0.59,
+              0.74,
+              0.78,
+              0.86,
+              0.87,
+              0.83,
+              0.81
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Sandy Shocks ex",
+            "number": "108",
+            "image": "https://static.tcgcollector.com/content/images/f0/19/f4/f019f4f2264aa11227b76293919918139fd1d1c67c5ff85abd9c3dcd61b62099.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.436,
+            "priceOnRelease": 0.57,
+            "priceEvolution": [
+              0.57,
+              0.71,
+              0.73,
+              0.72,
+              0.54,
+              0.5,
+              0.54,
+              0.64,
+              0.68,
+              0.72,
+              0.88,
+              0.6,
+              0.61
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Roaring Moon ex",
+            "number": "124",
+            "image": "https://static.tcgcollector.com/content/images/15/ef/f4/15eff4f0d778c57c932de5e2f63ed710f5bc17e0364be30e9c1bff4f9b732341.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.547,
+            "priceOnRelease": 0.86,
+            "priceEvolution": [
+              0.86,
+              1.05,
+              0.8,
+              1,
+              1.07,
+              1.13,
+              1.17,
+              0.82,
+              0.99,
+              0.91,
+              0.84,
+              0.72,
+              0.74
+            ],
+            "ebaySoldVolumeFrom2026": 1
+          },
+          {
+            "name": "Aegislash ex",
+            "number": "135",
+            "image": "https://static.tcgcollector.com/content/images/25/81/c1/2581c139d946c6f5c0e71fa9732f29c363ec764d7a00adab7a890707d8729e95.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.649,
+            "priceOnRelease": 0.6,
+            "priceEvolution": [
+              0.6,
+              0.65,
+              0.63,
+              0.74,
+              0.62,
+              0.53,
+              0.61,
+              0.66,
+              0.7,
+              0.76,
+              0.66,
+              0.71,
+              0.68
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Skeledirge ex",
+            "number": "137",
+            "image": "https://static.tcgcollector.com/content/images/96/86/c4/9686c4c843c2260ce582a5366609a5a6489e7b4749104e1ba7a53a56d9e4fb49.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.644,
+            "priceOnRelease": 0.73,
+            "priceEvolution": [
+              0.73,
+              0.72,
+              0.6,
+              0.73,
+              0.66,
+              0.57,
+              0.58,
+              0.74,
+              0.73,
+              0.81,
+              0.78,
+              0.62,
+              0.69
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Gholdengo ex",
+            "number": "139",
+            "image": "https://static.tcgcollector.com/content/images/7e/81/55/7e8155a5fb8c1af882d70d2a21bcfe9b714bf2145dc2c857a2ad7d896bfb2c6e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.39899999999999997,
+            "priceOnRelease": 13.43,
+            "priceEvolution": [
+              13.43,
+              10.85,
+              6.64,
+              6.52,
+              7.49,
+              5.78,
+              4.1,
+              2.42,
+              1.31,
+              1.29,
+              0.9,
+              1.01,
+              1.35
+            ],
+            "ebaySoldVolumeFrom2026": 2
+          },
+          {
+            "name": "Altaria ex",
+            "number": "140",
+            "image": "https://static.tcgcollector.com/content/images/f0/2e/b8/f02eb89664ddc88d6784e18b4b5a68e05814ccfbec649edc2c7fe90b00584c40.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.693,
+            "priceOnRelease": 0.62,
+            "priceEvolution": [
+              0.62,
+              0.71,
+              0.62,
+              0.73,
+              0.56,
+              0.59,
+              0.73,
+              0.69,
+              0.89,
+              0.8,
+              0.84,
+              0.72,
+              0.87
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Maushold ex",
+            "number": "155",
+            "image": "https://static.tcgcollector.com/content/images/69/b9/d1/69b9d1978e2b8696e7f52e437eaedb2c9bb2349710fd6148d440b482e462d1ff.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.537,
+            "priceOnRelease": 0.7,
+            "priceEvolution": [
+              0.7,
+              0.78,
+              0.64,
+              0.69,
+              0.59,
+              0.71,
+              0.7,
+              0.7,
+              1.29,
+              1.17,
+              1.27,
+              1.14,
+              1.45
+            ],
+            "ebaySoldVolumeFrom2026": 27
+          },
+          {
+            "name": "Bombirdier ex",
+            "number": "156",
+            "image": "https://static.tcgcollector.com/content/images/63/52/0d/63520d0b3eae6eecb39139527b37611e78ff7bf74ef03ef8355e327d4dd550e3.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.35100000000000003,
+            "priceOnRelease": 0.59,
+            "priceEvolution": [
+              0.59,
+              0.69,
+              0.56,
+              0.68,
+              0.55,
+              0.49,
+              0.59,
+              0.57,
+              0.64,
+              0.65,
+              0.61,
+              0.56,
+              0.61
+            ],
+            "ebaySoldVolumeFrom2026": 0
+          }
+        ],
+        "apiUrls": {
+          "100": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523770&days=365&language=english",
+          "108": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523780&days=365&language=english",
+          "124": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523800&days=365&language=english",
+          "135": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523814&days=365&language=english",
+          "137": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523816&days=365&language=english",
+          "139": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523818&days=365&language=english",
+          "140": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523821&days=365&language=english",
+          "155": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523836&days=365&language=english",
+          "156": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523837&days=365&language=english",
+          "003": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523587&days=365&language=english",
+          "027": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523636&days=365&language=english",
+          "038": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523647&days=365&language=english",
+          "046": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523655&days=365&language=english",
+          "050": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523660&days=365&language=english",
+          "058": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523670&days=365&language=english",
+          "068": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523703&days=365&language=english",
+          "070": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523706&days=365&language=english",
+          "076": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523736&days=365&language=english",
+          "089": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523756&days=365&language=english",
+          "098": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523768&days=365&language=english"
+        }
+      },
+      {
+        "rarity": "Illustration Rare",
+        "pullRate": 0.07692307692307693,
+        "numberOfCards": 34,
+        "specificCardPullRate": 0.0022624434389140274,
+        "costPerPull": 3717.22,
+        "concernedCards": [
+          {
+            "name": "Crustle",
+            "number": "183",
+            "image": "https://static.tcgcollector.com/content/images/f6/45/67/f6456715d9591c1a2f4b154388f082b10159b2057aab24ff2337ceac826e4988.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.505,
+            "priceOnRelease": 3.21,
+            "priceEvolution": [
+              3.21,
+              3.68,
+              3.37,
+              3.15,
+              3.27,
+              3.15,
+              3.52,
+              3.68,
+              3.92,
+              5.24,
+              5.36,
+              5.84,
+              5.75
+            ],
+            "ebaySoldVolumeFrom2026": 3
+          },
+          {
+            "name": "Dottler",
+            "number": "184",
+            "image": "https://static.tcgcollector.com/content/images/c0/25/7a/c0257abf082d56e5325f9c954e18f591c0c6b83c3dbd5b73d27ac4a8ef7ca732.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.302,
+            "priceOnRelease": 2.87,
+            "priceEvolution": [
+              2.87,
+              3.25,
+              3.45,
+              3.04,
+              3.3,
+              2.88,
+              3.35,
+              3.88,
+              4.41,
+              5.21,
+              4.87,
+              5.77,
+              5.45
+            ],
+            "ebaySoldVolumeFrom2026": 5
+          },
+          {
+            "name": "Toedscruel",
+            "number": "185",
+            "image": "https://static.tcgcollector.com/content/images/68/f2/d7/68f2d7956aaeeacc22592d0a8a3e917cc391b7a22f71eeac6900c91ccd9a6e6a.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.42,
+            "priceOnRelease": 5.22,
+            "priceEvolution": [
+              5.22,
+              6.19,
+              6.36,
+              5.81,
+              5.56,
+              5.93,
+              6.61,
+              6.5,
+              6.5,
+              6.66,
+              7.81,
+              7.17,
+              6.7
+            ],
+            "ebaySoldVolumeFrom2026": 4
+          },
+          {
+            "name": "Magby",
+            "number": "186",
+            "image": "https://static.tcgcollector.com/content/images/32/92/c7/3292c7a6adab8ac4cf45bcdc9bfe97ce61bd0cac2de86cee88df32d6f42a5509.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.35200000000000004,
+            "priceOnRelease": 12.17,
+            "priceEvolution": [
+              12.17,
+              12.22,
+              12.75,
+              13.74,
+              13.83,
+              14.19,
+              14.49,
+              15.89,
+              16.67,
+              18.56,
+              22.71,
+              23.58,
+              24.38
+            ],
+            "ebaySoldVolumeFrom2026": 7
+          },
+          {
+            "name": "Iron Moth",
+            "number": "187",
+            "image": "https://static.tcgcollector.com/content/images/28/e3/eb/28e3ebf7e54b5ff69569fba808de9f3c5edd5d1411d23c6c05520202fbacafc1.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.5379999999999999,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Snorunt",
+            "number": "188",
+            "image": "https://static.tcgcollector.com/content/images/e8/4c/cc/e84cccbd83ba084a9b6d5b750265030b40ff46566d2423a2a742dc872bff130d.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.513,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Mantyke",
+            "number": "189",
+            "image": "https://static.tcgcollector.com/content/images/2c/4d/48/2c4d487726c7cc513fb2d83ebb2b3d3ae73121f17d9159ed4f06104aeff09f1b.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.47600000000000003,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Vanillish",
+            "number": "190",
+            "image": "https://static.tcgcollector.com/content/images/c8/63/9e/c8639e45057128d459027c8d9e034dd85e3d1e4bf2c17698263c9eb4bd37803f.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.41700000000000004,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Wimpod",
+            "number": "191",
+            "image": "https://static.tcgcollector.com/content/images/4f/38/b5/4f38b599f27f7c0cb130c343c6c8fe138318dc526d32d60c17bcef56119baa35.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.415,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Veluza",
+            "number": "192",
+            "image": "https://static.tcgcollector.com/content/images/f2/8d/21/f28d210c4c97cbbc927518447e695b20054bfaaa6da42cfa0b2a86c971c72e47.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.34700000000000003,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Plusle",
+            "number": "193",
+            "image": "https://static.tcgcollector.com/content/images/0d/ef/37/0def37b84367c25f0fba90a86bf4b40474f679f1f59effe621962aac43526370.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.499,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Minun",
+            "number": "194",
+            "image": "https://static.tcgcollector.com/content/images/95/98/07/959807137185d99d33016c5d108268fba0af7bfeebea387b01581a2498ec40c3.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.498,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Blitzle",
+            "number": "195",
+            "image": "https://static.tcgcollector.com/content/images/36/ff/c9/36ffc9fe05f856cd6101ccf196cb9271371167678cc990ceb3cbe5d4c0c28f31.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.47700000000000004,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Joltik",
+            "number": "196",
+            "image": "https://static.tcgcollector.com/content/images/09/f6/4b/09f64ba0d2e27d016c0a194d2cc61056206311c279aa54e0af75f49a38a4318c.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.609,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Espathra",
+            "number": "197",
+            "image": "https://static.tcgcollector.com/content/images/8c/f2/f3/8cf2f3084846f0e6faa0e7a86803ecba2f7ad28bb827d60c1c967733b7fc1368.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.35700000000000004,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Gimmighoul",
+            "number": "198",
+            "image": "https://static.tcgcollector.com/content/images/09/60/ae/0960aec02830b73e791de3a746290fa80511d8b383be60f1479aa01743511f2c.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.428,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Groudon",
+            "number": "199",
+            "image": "https://static.tcgcollector.com/content/images/c9/cc/2d/c9cc2da5930995bf405bf4c164602110da397df7815650030ca2ff9d50e6df7f.jpg",
+            "isChase": true,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.6729999999999999,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Mienshao",
+            "number": "200",
+            "image": "https://static.tcgcollector.com/content/images/ce/9f/ef/ce9fefdadc2c9172d9bf326b14380ea06594c9b55a21862deb9effb8d6bbad7d.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.563,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Minior",
+            "number": "201",
+            "image": "https://static.tcgcollector.com/content/images/84/8d/d8/848dd89584552001a3b9b0f7774f82e6c315feb687026dffbf858d9422069a9f.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.433,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Garganacl",
+            "number": "202",
+            "image": "https://static.tcgcollector.com/content/images/59/93/0a/59930a3d2debcde9caf98c35ab911b468f2d9e852a3822415cdc7e036c4bb84c.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.48,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Slither Wing",
+            "number": "203",
+            "image": "https://static.tcgcollector.com/content/images/91/85/5b/91855b2c11ca2a35f3285fca7b72ea9423e5f0e85dc45f330075dbd012fd29a7.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.5489999999999999,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Garbodor",
+            "number": "204",
+            "image": "https://static.tcgcollector.com/content/images/af/f9/f8/aff9f83523ce44903974ab6a4096259daa9eca08860ad80ac1912bb32569812e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.389,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Yveltal",
+            "number": "205",
+            "image": "https://static.tcgcollector.com/content/images/cc/30/4e/cc304e59ae595e01fb50dc5b00c133a64b4c5e834f3ec26ad8b7d125b8230440.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.64,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Morpeko",
+            "number": "206",
+            "image": "https://static.tcgcollector.com/content/images/77/40/ec/7740ec23ef94d7d97c34e17390d5f261d8bf07db534fd86889a777d81fcce3b4.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.49200000000000005,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Brute Bonnet",
+            "number": "207",
+            "image": "https://static.tcgcollector.com/content/images/5b/a8/f6/5ba8f69588506cbad306df3b8d581bcf6aa97fa912a0fbe07dd776fbc381ea50.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.413,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Steelix",
+            "number": "208",
+            "image": "https://static.tcgcollector.com/content/images/0d/c7/38/0dc738bfbe84800ee3f7cf5d7b595be46de03c614656be0159b867cd9df48d3e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.573,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Ferrothorn",
+            "number": "209",
+            "image": "https://static.tcgcollector.com/content/images/6a/21/ce/6a21ce67a65003b1731d7829b6c82c1900c9621d28f005ee8ccbec97aa0e2e8f.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.43799999999999994,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Aegislash",
+            "number": "210",
+            "image": "https://static.tcgcollector.com/content/images/a3/ee/34/a3ee349883c0672a2d84051f6ad6e30149b3e2519c7f6c96f88b4f994f111a18.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.649,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Aipom",
+            "number": "211",
+            "image": "https://static.tcgcollector.com/content/images/7a/ec/7d/7aec7d5d6cb1e5d295eb45e3693286ad79a44d7753f00ac96301406993053db0.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.446,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Loudred",
+            "number": "212",
+            "image": "https://static.tcgcollector.com/content/images/b1/93/81/b19381cbb571191cf027dd4a430c05416094de1dc1b7a0e1b7a6b6810383228a.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.363,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Swablu",
+            "number": "213",
+            "image": "https://static.tcgcollector.com/content/images/29/a2/84/29a2844b63b4e5d49bd65f1ecd2a32265353703ae05f3a9026544ef191fb01aa.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.573,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Porygon-Z",
+            "number": "214",
+            "image": "https://static.tcgcollector.com/content/images/b1/a6/92/b1a69215186e0cef6f1d553ef439e599b8d101f9bbf877f279e45d4b4c60bf98.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.6579999999999999,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Cyclizar",
+            "number": "215",
+            "image": "https://static.tcgcollector.com/content/images/c7/5a/64/c75a6454ac78e25810762c0531d18b805c5f1d2b85a808090313606f27666abb.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.455,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Jugulis",
+            "number": "216",
+            "image": "https://static.tcgcollector.com/content/images/aa/92/24/aa922479757cf7aff1c054a99ed028f39041f669b135e57b9e0279e74ea6d011.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.45799999999999996,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          }
+        ],
+        "apiUrls": {
+          "183": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523864&days=365&language=english",
+          "184": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523865&days=365&language=english",
+          "185": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523866&days=365&language=english",
+          "186": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523867&days=365&language=english",
+          "187": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523868&days=365&language=english",
+          "188": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523869&days=365&language=english",
+          "189": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523870&days=365&language=english",
+          "190": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523871&days=365&language=english",
+          "191": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523872&days=365&language=english",
+          "192": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523873&days=365&language=english",
+          "193": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523874&days=365&language=english",
+          "194": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523875&days=365&language=english",
+          "195": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523876&days=365&language=english",
+          "196": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523877&days=365&language=english",
+          "197": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523878&days=365&language=english",
+          "198": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523879&days=365&language=english",
+          "199": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523880&days=365&language=english",
+          "200": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523881&days=365&language=english",
+          "201": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523882&days=365&language=english",
+          "202": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523883&days=365&language=english",
+          "203": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523884&days=365&language=english",
+          "204": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523885&days=365&language=english",
+          "205": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523886&days=365&language=english",
+          "206": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523887&days=365&language=english",
+          "207": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523888&days=365&language=english",
+          "208": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523889&days=365&language=english",
+          "209": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523890&days=365&language=english",
+          "210": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523891&days=365&language=english",
+          "211": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523892&days=365&language=english",
+          "212": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523893&days=365&language=english",
+          "213": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523894&days=365&language=english",
+          "214": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523895&days=365&language=english",
+          "215": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523896&days=365&language=english",
+          "216": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523897&days=365&language=english"
+        }
+      },
+      {
+        "rarity": "Ultra Rare",
+        "pullRate": 0.06666666666666667,
+        "numberOfCards": 28,
+        "specificCardPullRate": 0.0023809523809523807,
+        "costPerPull": 3532.2000000000007,
+        "concernedCards": [
+          {
+            "name": "Froslass ex",
+            "number": "217",
+            "image": "https://static.tcgcollector.com/content/images/6f/d8/76/6fd8763ec614b99ef7d30fd7a7cb445d69a8edf3d4df6c7ff11ee3badd984aec.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.655,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Armarouge ex",
+            "number": "218",
+            "image": "https://static.tcgcollector.com/content/images/bf/75/6c/bf756c00dd76f335417eaae559f7d3b57e3e7b03b4ef6b673724051985909d10.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.575,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Garchomp ex",
+            "number": "219",
+            "image": "https://static.tcgcollector.com/content/images/33/d0/40/33d0405282d3738cf0674dc84c2e97478764883e6a3e40e7d5d84e9a7304130c.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.726,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Tsareena ex",
+            "number": "220",
+            "image": "https://static.tcgcollector.com/content/images/37/16/19/37161928e14f0c23177c208519210f4a48746cf3c53df6d0d07cecdcbb532d4b.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.556,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Golisopod ex",
+            "number": "221",
+            "image": "https://static.tcgcollector.com/content/images/6f/90/1b/6f901bc9a775f1646e10fbb6124edcdb0cccba033448f8dcb9330a49429cdb08.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.565,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Tapu Koko ex",
+            "number": "222",
+            "image": "https://static.tcgcollector.com/content/images/0e/0e/be/0e0ebe795c11f4b7c7b3879da1cda80009153de3d3c9663b2d980de5644b804e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.5770000000000001,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Hands ex",
+            "number": "223",
+            "image": "https://static.tcgcollector.com/content/images/46/1c/7d/461c7ddde2eafa95037f966041e3e6ef30b04888d382d07676717c8a535b854f.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.39799999999999996,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Cofagrigus ex",
+            "number": "224",
+            "image": "https://static.tcgcollector.com/content/images/5d/29/df/5d29df1aab9bfe77701dd0091b35ada000c826450bc695c3a759dbcd0293ef20.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.59,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Valiant ex",
+            "number": "225",
+            "image": "https://static.tcgcollector.com/content/images/d3/09/b0/d309b0f392dabd1fb62726b0b3b152bddcdbc73872bb0957b2ab0c0b3d9a06dc.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.63,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Hoopa ex",
+            "number": "226",
+            "image": "https://static.tcgcollector.com/content/images/d1/18/31/d11831605a94d041594f564e315366cf7e68bace117ec25bdbad7c94d2f19e66.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.49,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Toxtricity ex",
+            "number": "227",
+            "image": "https://static.tcgcollector.com/content/images/0c/61/c1/0c61c1a17c3bc08b1bd4d90faef799801bf110045aee97794f3ccbc739d9fe00.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.585,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Sandy Shocks ex",
+            "number": "228",
+            "image": "https://static.tcgcollector.com/content/images/a0/d6/db/a0d6db3678d7ea342005c65cdefb0fbcccded8ca4d627e7d21051eb53486d015.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.436,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Roaring Moon ex",
+            "number": "229",
+            "image": "https://static.tcgcollector.com/content/images/90/ca/6a/90ca6a8979b9b72064a1ed84deb313a867bfcbae15f9f14c7cbc4974b55ef2e9.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.547,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Aegislash ex",
+            "number": "230",
+            "image": "https://static.tcgcollector.com/content/images/25/cb/9c/25cb9c461af5f16e86f20983e8ed153e2d16d5fe60529dfdad37fce609f5c5bb.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.649,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Gholdengo ex",
+            "number": "231",
+            "image": "https://static.tcgcollector.com/content/images/37/ca/6a/37ca6aad48d8670b5f9cdd3b54fff711143cad7ee88071b888f0a5268b3ce9ba.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.39899999999999997,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Altaria ex",
+            "number": "232",
+            "image": "https://static.tcgcollector.com/content/images/e9/fd/09/e9fd097735f80e9942e395d9738f7b778e6f9fee4f5926498dbcb47e95b97197.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.693,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Maushold ex",
+            "number": "233",
+            "image": "https://static.tcgcollector.com/content/images/34/04/f4/3404f4905424d9b0d9acd5efc80574efa5045e392474f33d17d3c67c15ea531e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.537,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Bombirdier ex",
+            "number": "234",
+            "image": "https://static.tcgcollector.com/content/images/83/cd/7f/83cd7f170f0639c2232a865a585ddeb20511e058d301d755d98cfd6f999bccbe.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.35100000000000003,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Larry",
+            "number": "235",
+            "image": "https://static.tcgcollector.com/content/images/88/bd/d7/88bdd755f4999adefb5e428a6a691bc2f908e9c6fdaceb3cdccf94d4ff478666.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Mela",
+            "number": "236",
+            "image": "https://static.tcgcollector.com/content/images/f0/fb/bb/f0fbbb69f4453540a0af5cf1a441e167cb00696511bff34f0ac4406fd94e8279.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Norman",
+            "number": "237",
+            "image": "https://static.tcgcollector.com/content/images/4a/c5/c4/4ac5c4dc3fb0b00b456ae4c6d54bb5bd0a9f09c3c9a516840a53473c89dc1cbc.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Parasol Lady",
+            "number": "238",
+            "image": "https://static.tcgcollector.com/content/images/ec/a1/9c/eca19c448991c613703436db4c91fbd42be99ea83ae3883e32230d0082840cfb.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Professor Sada's Vitality",
+            "number": "239",
+            "image": "https://static.tcgcollector.com/content/images/8a/75/4b/8a754b6a0355b4ac66a40d8d9b4bef137cdf367f3a1ea36d33534cf6fe7ace7c.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Professor Turo's Scenario",
+            "number": "240",
+            "image": "https://static.tcgcollector.com/content/images/18/53/70/185370b6cd62919dbc491445837ae8fad10b525234a7535937d6345c653b0f68.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Rika",
+            "number": "241",
+            "image": "https://static.tcgcollector.com/content/images/9c/4f/27/9c4f274d3ec105223f2b03afb7d539d49c2b891acb278265b5c56348e8e92127.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Roark",
+            "number": "242",
+            "image": "https://static.tcgcollector.com/content/images/ff/91/c3/ff91c34ebeaa31d0191ad4e07cef9317a5b9ed3496bd0bb397f1aa0aa778d28d.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Shauntal",
+            "number": "243",
+            "image": "https://static.tcgcollector.com/content/images/33/ae/94/33ae94381bb2d6c40a8af5a96724a3d70a8e2d35f970f951d0d4b8b64063e123.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Tulip",
+            "number": "244",
+            "image": "https://static.tcgcollector.com/content/images/5a/86/93/5a86935010d48a40d74c8058b2b1ce381210ffb24c3e33846e2bc39e1e360c6f.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          }
+        ],
+        "apiUrls": {
+          "217": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523898&days=365&language=english",
+          "218": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523899&days=365&language=english",
+          "219": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523900&days=365&language=english",
+          "220": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523901&days=365&language=english",
+          "221": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523902&days=365&language=english",
+          "222": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523903&days=365&language=english",
+          "223": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523904&days=365&language=english",
+          "224": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523905&days=365&language=english",
+          "225": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523906&days=365&language=english",
+          "226": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523907&days=365&language=english",
+          "227": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523908&days=365&language=english",
+          "228": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523909&days=365&language=english",
+          "229": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523910&days=365&language=english",
+          "230": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523911&days=365&language=english",
+          "231": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523912&days=365&language=english",
+          "232": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523913&days=365&language=english",
+          "233": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523914&days=365&language=english",
+          "234": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523915&days=365&language=english",
+          "235": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523916&days=365&language=english",
+          "236": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523917&days=365&language=english",
+          "237": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523918&days=365&language=english",
+          "238": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523919&days=365&language=english",
+          "239": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523920&days=365&language=english",
+          "240": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523921&days=365&language=english",
+          "241": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523922&days=365&language=english",
+          "242": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523923&days=365&language=english",
+          "243": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523924&days=365&language=english",
+          "244": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523925&days=365&language=english"
+        }
+      },
+      {
+        "rarity": "Special Illustration Rare",
+        "pullRate": 0.02127659574468085,
+        "numberOfCards": 15,
+        "specificCardPullRate": 0.0014184397163120566,
+        "costPerPull": 5929.050000000001,
+        "concernedCards": [
+          {
+            "name": "Garchomp ex",
+            "number": "245",
+            "image": "https://static.tcgcollector.com/content/images/94/54/e2/9454e2bb8837c5c65de5596e4b3a9c21d3286c4f15c74b417a9253d6f3565f96.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.726,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Golisopod ex",
+            "number": "246",
+            "image": "https://static.tcgcollector.com/content/images/98/fe/a3/98fea3286b0a0cdb41bc20078657aaefc0fb7b549563415ca05c7a2d991af7a9.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.565,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Tapu Koko ex",
+            "number": "247",
+            "image": "https://static.tcgcollector.com/content/images/38/7e/1f/387e1f2cfc1df58bc771652cb85f6d51ab65c1ed98a113632861513356a4a382.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.5770000000000001,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Hands ex",
+            "number": "248",
+            "image": "https://static.tcgcollector.com/content/images/c8/39/af/c839af3ac427aaa4413286375bfe41f518b1097542d9b016d3acc2923bded7af.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.39799999999999996,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Valiant ex",
+            "number": "249",
+            "image": "https://static.tcgcollector.com/content/images/12/3e/6a/123e6a905623b482e730ca99add5ed151514e15336f0f8cc04084699635dffa4.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.63,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Sandy Shocks ex",
+            "number": "250",
+            "image": "https://static.tcgcollector.com/content/images/33/56/8f/33568f84360bf7945176a22e2560bc6c34383816bbb54b9380abec7818ee8346.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.436,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Roaring Moon ex",
+            "number": "251",
+            "image": "https://static.tcgcollector.com/content/images/fa/30/ec/fa30ecec555b69a21ddcd54f2aef3c4c513c0f46aaa7b1bd0f99cf009e82e3b9.jpg",
+            "isChase": true,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.547,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Gholdengo ex",
+            "number": "252",
+            "image": "https://static.tcgcollector.com/content/images/52/5e/cf/525ecf75fbf1db9f1973cd980a3d41d4df65e36ffcbb26a8c04bd6639c32623d.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.39899999999999997,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Altaria ex",
+            "number": "253",
+            "image": "https://static.tcgcollector.com/content/images/45/cd/e9/45cde90736659cfe8c2cfcc11ab8d303266159f4b7bf50a399eb4f2d61440c49.jpg",
+            "isChase": true,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.693,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Mela",
+            "number": "254",
+            "image": "https://static.tcgcollector.com/content/images/27/96/dc/2796dca0a788e8c0531db82e1caa696822521cf61dfdb97bde436456189e418c.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Parasol Lady",
+            "number": "255",
+            "image": "https://static.tcgcollector.com/content/images/0b/51/91/0b5191f9edf4f62336523aa400206dfd564cf734587cf98d0a81c2d565b903dc.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Professor Sada's Vitality",
+            "number": "256",
+            "image": "https://static.tcgcollector.com/content/images/3d/e0/c3/3de0c3aaf730944b581de1fa14cb08600fb4891c2d8f2f27cee4c595879e85ba.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Professor Turo's Scenario",
+            "number": "257",
+            "image": "https://static.tcgcollector.com/content/images/dc/1d/20/dc1d201a38223a281f84f60ea7acbbbe871c3b2f507308b6f73a2a4d1a0921dd.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Rika",
+            "number": "258",
+            "image": "https://static.tcgcollector.com/content/images/58/9c/ce/589cce5faa7c6ce18ced071ad5d6d107bd30c2fabe846ffeb9be376c36cc0f98.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Tulip",
+            "number": "259",
+            "image": "https://static.tcgcollector.com/content/images/08/67/ef/0867efa4ba5150d7463f8138f08990a92080482f3d07cf8ed8c242710ee0a657.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          }
+        ],
+        "apiUrls": {
+          "245": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523926&days=365&language=english",
+          "246": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523927&days=365&language=english",
+          "247": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523928&days=365&language=english",
+          "248": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523929&days=365&language=english",
+          "249": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523930&days=365&language=english",
+          "250": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523931&days=365&language=english",
+          "251": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523932&days=365&language=english",
+          "252": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523933&days=365&language=english",
+          "253": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523934&days=365&language=english",
+          "254": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523935&days=365&language=english",
+          "255": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523936&days=365&language=english",
+          "256": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523937&days=365&language=english",
+          "257": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523938&days=365&language=english",
+          "258": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523939&days=365&language=english",
+          "259": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523940&days=365&language=english"
+        }
+      },
+      {
+        "rarity": "Hyper Rare",
+        "pullRate": 0.012195121951219513,
+        "numberOfCards": 7,
+        "specificCardPullRate": 0.0017421602787456446,
+        "costPerPull": 4827.34,
+        "concernedCards": [
+          {
+            "name": "Garchomp ex",
+            "number": "260",
+            "image": "https://static.tcgcollector.com/content/images/1a/e3/4d/1ae34d15d2c5d5b9e83b7a76e6791a1b6cf21eefdd12f41cdf6a59b047cebc27.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.726,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Iron Valiant ex",
+            "number": "261",
+            "image": "https://static.tcgcollector.com/content/images/03/86/82/038682e2c9996c999923d7c31b260a2b706ce3cfaf214c9ca813f2eb826233f6.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.63,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Roaring Moon ex",
+            "number": "262",
+            "image": "https://static.tcgcollector.com/content/images/14/61/67/1461674e636baf14bbc76e72c90f8c09b4878075f9c683d76229bbd7789e170a.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": true,
+            "pokemonPopularity": 0.547,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Beach Court",
+            "number": "263",
+            "image": "https://static.tcgcollector.com/content/images/a6/4f/4b/a64f4b4769f47ef3b04bae36fe60eb8774c0e1cec26d54631e18178163cdff4e.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Counter Catcher",
+            "number": "264",
+            "image": "https://static.tcgcollector.com/content/images/fb/d5/69/fbd5693ddf9759ce996d0292cb897627923a0a3ed761fb46827c1cecf25ffabe.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Luxurious Cape",
+            "number": "265",
+            "image": "https://static.tcgcollector.com/content/images/1f/9a/2c/1f9a2cdaccdbfee0dbaff2e678d607196e49cc75d5d642d46f8584b8c554afee.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          },
+          {
+            "name": "Reversal Energy",
+            "number": "266",
+            "image": "https://static.tcgcollector.com/content/images/a8/9f/e2/a89fe292400e3b23f3db5161283d6907fc5f9706d738c79bdd6b7e1cf5987c29.jpg",
+            "isChase": false,
+            "isPromo": false,
+            "isPokemon": false,
+            "pokemonPopularity": 0,
+            "priceOnRelease": 0,
+            "priceEvolution": [],
+            "ebaySoldVolumeFrom2026": 0
+          }
+        ],
+        "apiUrls": {
+          "260": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523941&days=365&language=english",
+          "261": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523942&days=365&language=english",
+          "262": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523943&days=365&language=english",
+          "263": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523944&days=365&language=english",
+          "264": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523945&days=365&language=english",
+          "265": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523946&days=365&language=english",
+          "266": "https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=523947&days=365&language=english"
         }
       }
     ]
