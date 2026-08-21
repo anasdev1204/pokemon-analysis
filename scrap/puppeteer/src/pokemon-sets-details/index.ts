@@ -1132,7 +1132,7 @@ class PokemonSetDetailsScraper {
         };
 
         const buildAPIUrl = (tcgplayerCode: string) => {
-            return `https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=${tcgplayerCode}&days=365&language=english`;
+            return `https://www.pokemonpricetracker.com/api/v2/internal/card-history?cardId=${tcgplayerCode}&days=999&language=english`;
         };
 
         try {
@@ -1470,7 +1470,7 @@ class PokemonSetDetailsScraper {
 
     private async createAccountInPriceTracker(): Promise<{ email: string; pw: string }> {
         return new Promise((resolve) => {
-            const email = "noric92874@prodbits.com"
+            const email = "xavodig183@ebflyai.com"
             const pw = "1342_ECOmessi"
 
             resolve({ email, pw });
