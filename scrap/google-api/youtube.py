@@ -9,6 +9,8 @@ from googleapiclient.discovery import build
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
 
+CLIENT_CREDENTIALS = "client-secrets3.json"
+
 SETS_PATH = "/Users/anas/Projects/pkmn-analysis/scrap/puppeteer/cache/sets.json"
 OUTPUT_PATH = "/Users/anas/Projects/pkmn-analysis/data/youtube-set-videos.json"
 
@@ -27,7 +29,7 @@ def get_credentials():
             credentials.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                "client-secrets.json",
+                CLIENT_CREDENTIALS,
                 SCOPES
             )
             credentials = flow.run_local_server(port=0)
@@ -152,9 +154,6 @@ def main():
 
         release_date = pkmn_set["releaseDate"]
 
-        is_additional_name = pkmn_set["searchName"] if "searchName" in pkmn_set else None
-        if is_additional_name: 
-            set_name += " " +is_additional_name
         search_name = set_name + " pokemon tcg"
 
         print(
