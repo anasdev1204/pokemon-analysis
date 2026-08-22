@@ -300,9 +300,10 @@ for set_name, cards in ebay_data.items():
         # ====================================================
 
         listings = []
-
-        for item in items:
-
+        MAX_ITEMS = 1000
+        for i in range(min(len(items), MAX_ITEMS)):
+            item = items[i]
+            
             price = parse_price(
                 item.get("price")
             )

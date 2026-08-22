@@ -120,10 +120,7 @@ def main():
     )
 
     print(
-        json.dumps(
-            rate_limits,
-            indent=4
-        )
+        rate_limits["rateLimits"][0]["resources"][0]["rates"][0]["remaining"]
     )
 
 

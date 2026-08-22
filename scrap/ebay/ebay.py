@@ -18,7 +18,7 @@ CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 
 SETS_PATH = (
     "/Users/anas/Projects/pkmn-analysis/"
-    "data/pokemon-sets.json"
+    "data/processed/pokemon-sets.json"
 )
 
 OUTPUT_PATH = (
@@ -86,6 +86,7 @@ def search_ebay(
     items = []
 
     offset = 0
+    MAX_ITEMS = 1000
 
     while True:
 
@@ -117,7 +118,11 @@ def search_ebay(
             f"(total: {len(items)})"
         )
 
-        if not data.get("next"):
+        if len(items) >= MAX_ITEMS:
+            items = items[:MAX_ITEMS]
+            break
+
+        if not len(batch) == 200:
             break
 
         if not batch:
