@@ -1470,7 +1470,7 @@ class PokemonSetDetailsScraper {
 
     private async createAccountInPriceTracker(): Promise<{ email: string; pw: string }> {
         return new Promise((resolve) => {
-            const email = "xavodig183@ebflyai.com"
+            const email = "xopenab153@kikaga.com"
             const pw = "1342_ECOmessi"
 
             resolve({ email, pw });
