@@ -315,15 +315,28 @@ class PokemonSetDetailsScraper {
                 () => this.scrapeSetCards()
             );
 
-            this.chaseCards = await this.loadOrScrape(
-                "chase-cards.json",
-                () => this.scrapeChaseCards()
-            )
+            const results = await this.scrapeSetCards();
 
-            this.priceAPIUrls = await this.loadOrScrape(
-                "api-urls.json",
-                () => this.scrapePriceHistoryAPIUrls()
-            )
+            const filePath = path.join(
+                this.cacheDirectory,
+                "cards.json"
+            );
+
+            await fs.writeFile(
+                filePath,
+                JSON.stringify(results, null, 2),
+                "utf8"
+            );
+
+            // this.chaseCards = await this.loadOrScrape(
+            //     "chase-cards.json",
+            //     () => this.scrapeChaseCards()
+            // )
+
+            // this.priceAPIUrls = await this.loadOrScrape(
+            //     "api-urls.json",
+            //     () => this.scrapePriceHistoryAPIUrls()
+            // )
 
             // console.log("Sets:", this.sets);
             // console.log("Booster prices:", this.boosterPrices);
@@ -776,7 +789,7 @@ class PokemonSetDetailsScraper {
 
             const anchors = [];
             const titles: string[] = [];
-            const seenTitles = new Set<string>();
+            const seenTitles = new Set<string>(this.cards.map(card => card.setName));
             for (const setCard of allSetCards) {
                 const anchor = await setCard.$("a");
                 let title = await anchor?.evaluate(el => el.getAttribute("title"));
@@ -788,7 +801,7 @@ class PokemonSetDetailsScraper {
                     title = numberMatch[0];
                 }
 
-                console.log("Card title:", title);
+                    console.log("Set title:", title);
 
                 const matchingSetName = this.sets.find(set => title.includes(set.name.toLowerCase()));
                 if (matchingSetName) {
@@ -808,11 +821,8 @@ class PokemonSetDetailsScraper {
                 console.log("Skipping card with title:", title);
             };
 
-            console.log(anchors.length);
-
             const setsAnchorsTitles = await Promise.all(
                 anchors.map(async anchor => {
-
                     const href = await anchor?.evaluate(
                         el => (el as HTMLAnchorElement).href
                     ) ?? "";
@@ -827,10 +837,13 @@ class PokemonSetDetailsScraper {
                     };
                 })
             );
+
+            console.log("Filtered sets to scrape:", setsAnchorsTitles);
             
             for (let x = 0; x < setsAnchorsTitles.length; x++) {
                 page = await this.newPage();
                 const { href, title: currentTitle } = setsAnchorsTitles[x] as { href: string; title: string };
+                const matchingSetTitle = titles[x];
 
                 console.log("Navigating to card details page:", href);
                 await this.navigate(page, href);
@@ -842,7 +855,7 @@ class PokemonSetDetailsScraper {
                     console.log("Current title split:", currentTitle.split("Promos")[0]);
                     setRaritiesPullRate = this.pullRates.filter(pr => pr.setName == currentTitle.split("Promos")[0]?.trim() && pr.rarity.toLowerCase().includes("promo"));
                 } else {
-                    setRaritiesPullRate = this.pullRates.filter((pr) => pr.setName == currentTitle && !pr.rarity.toLowerCase().includes("promo"));
+                    setRaritiesPullRate = this.pullRates.filter((pr) => pr.setName == matchingSetTitle && !pr.rarity.toLowerCase().includes("promo"));
                 }
 
                 const filterButton = await page.$("#show-card-filters-drawer-button");
@@ -918,7 +931,7 @@ class PokemonSetDetailsScraper {
                         );
 
                         const pokemonName = cardDetailedName.split("(")[0]?.trim() ?? "";
-                        const cardNumber = cardDetailedName.split("(")[1]?.replace(/\D/g, "").trim().slice(0, 3) ?? "";
+                        const cardNumber = cardDetailedName.split("/")[0]?.replace(/\D/g, "").trim() .slice(-3) ?? "";
 
                         const cardImage = await card.$eval("a > img", el => (el as HTMLImageElement).src ?? "");
 
@@ -952,7 +965,7 @@ class PokemonSetDetailsScraper {
 
 
                         const finalCard: RawCard = {
-                            setName: currentTitle ?? "",
+                            setName: currentTitle.toLowerCase().includes("promo") ? currentTitle.trim() : (matchingSetTitle?.trim() ?? currentTitle.trim()),
                             rarity: rarityPullRate.rarity,
                             name: pokemonName,
                             number: cardNumber,
@@ -981,7 +994,10 @@ class PokemonSetDetailsScraper {
                 }
             }
 
-            return results;
+            return [
+                ...results,
+                ...this.cards
+            ]
         } catch(error) {
             if (!this.browser.connected) {
                 await this.restartBrowser();
@@ -1667,40 +1683,217 @@ class PokemonSetDetailsScraper {
                 }) : [];
 
             let hitLimitReached = false;
+                
+            for (let j = 0; j < hitsRarities.length; j++) {
+                if (hitLimitReached) {
+                    break;
+                }
 
-        for (let j = 0; j < hitsRarities.length; j++) {
-            if (hitLimitReached) {
-                break;
-            }
-
-            const rarityData = hitsRarities[j];
-
-            if (!rarityData) {
-                continue;
-            }
-
-            for (let i = 0; i < rarityData.concernedCards.length; i++) {
-                const card = rarityData.concernedCards[i];
-
-                if (!card) {
+                const rarityData = hitsRarities[j];
+                
+                if (!rarityData) {
                     continue;
                 }
 
-                const cached = await this.getCardCache(
-                    setName,
-                    card.number
-                );
+                for (let i = 0; i < rarityData.concernedCards.length; i++) {
+                    const card = rarityData.concernedCards[i];
 
-                if (cached) {
-                    console.log(
-                        `Using cached data for ${card.name} (${card.number})`
+                    if (!card) {
+                        continue;
+                    }
+
+                    const cached = await this.getCardCache(
+                        setName,
+                        card.number
                     );
+                    if (setName === "151") {
+                        console.log(cached);
+                    };
+
+                    if (cached) {
+                        // console.log(
+                        //     `Using cached data for ${card.name} (${card.number})`
+                        // );
+
+                        // @ts-expect-error
+                        hitsRarities[j].concernedCards[i] = {
+                            ...card,
+                            ...cached
+                        };
+
+                        const finalPokemonSet: PokemonSet = {
+                            name: setName,
+                            series: setSeries,
+                            number: "0",
+                            releaseDate: setReleaseDate,
+                            boosterPrice: boosterPrice,
+                            numberOfChases: setChaseCards?.length ?? 0,
+                            numberOfHits: setHitRates?.length ?? 0,
+                            chaseRatioOutOfHits:
+                                (setChaseCards?.length ?? 0) /
+                                (setHitRates?.length ?? 1),
+                            numberOfCards: Object.keys(
+                                setCards ?? {}
+                            ).length,
+                            hitsRarities: hitsRarities
+                        };
+
+                        result[setName] = finalPokemonSet;
+
+                        await this.writeJson(result);
+
+                        continue;
+                    }
+
+                    console.log(
+                        `Scraping price data for ${card.name} (${card.number})`
+                    );
+
+                    const cardApiUrl =
+                        cardsPerSet[setName]?.[card.number] ?? "";
+
+                    if (!cardApiUrl) {
+                        // console.warn(
+                        //     `No API URL found for ${card.name} (${card.number}) in set ${setName}`
+                        // );
+                        continue;
+                    }
+
+                    let priceData: {
+                        priceOnRelease: number;
+                        priceEvolution: any[];
+                        ebaySoldVolumeFrom2026: number;
+                    } | null = null;
+
+                    // =====================================================
+                    // Retry up to 3 times if we get completely empty data
+                    // =====================================================
+
+                    for (let attempt = 1; attempt <= 3; attempt++) {
+                        try {
+                            console.log(
+                                `Attempt ${attempt}/3 for ${card.name} (${card.number})`
+                            );
+
+                            const {
+                                priceOnRelease,
+                                priceEvolution,
+                                ebaySoldVolumeFrom2026
+                            } = await this.scrapeCardPriceData(
+                                page,
+                                cardApiUrl
+                            );
+
+                            const noData =
+                                priceOnRelease === 0 &&
+                                priceEvolution.length === 0 &&
+                                ebaySoldVolumeFrom2026 === 0;
+
+                            if (noData) {
+                                console.warn(
+                                    `No price data returned for ${card.name} (${card.number})`
+                                );
+
+                                if (attempt < 3) {
+                                    console.log(
+                                        `Retrying in 10 seconds...`
+                                    );
+
+                                    await new Promise(resolve =>
+                                        setTimeout(resolve, 10000)
+                                    );
+
+                                    continue;
+                                }
+
+                                // All 3 attempts returned no data.
+                                console.error(
+                                    `Price limit likely reached. ` +
+                                    `3 consecutive attempts returned no data.`
+                                );
+
+                                hitLimitReached = true;
+                                break;
+                            }
+
+                            // =================================================
+                            // Successful request
+                            // =================================================
+
+                            priceData = {
+                                priceOnRelease,
+                                priceEvolution,
+                                ebaySoldVolumeFrom2026
+                            };
+
+                            console.log(
+                                "Scraped successfully for card:",
+                                card.name,
+                                "priceOnRelease:",
+                                priceOnRelease,
+                                "priceEvolution:",
+                                priceEvolution,
+                                "ebaySoldVolumeFrom2026:",
+                                ebaySoldVolumeFrom2026
+                            );
+
+                            break;
+
+                        } catch (error) {
+                            console.error(
+                                `Attempt ${attempt}/3 failed for ${card.name} (${card.number})`,
+                                error
+                            );
+
+                            if (attempt < 3) {
+                                console.log(
+                                    `Retrying in 10 seconds...`
+                                );
+
+                                await new Promise(resolve =>
+                                    setTimeout(resolve, 10000)
+                                );
+                            } else {
+                                console.error(
+                                    `All 3 attempts failed. Stopping price scraping.`
+                                );
+
+                                hitLimitReached = true;
+                            }
+                        }
+                    }
+
+                    // =====================================================
+                    // Stop if all retries failed
+                    // =====================================================
+
+                    if (hitLimitReached || !priceData) {
+                        break;
+                    }
+
+                    // =====================================================
+                    // Save cache immediately
+                    // =====================================================
+
+                    await this.saveCardCache(
+                        setName,
+                        card.number,
+                        priceData
+                    );
+
+                    // =====================================================
+                    // Update card
+                    // =====================================================
 
                     // @ts-expect-error
                     hitsRarities[j].concernedCards[i] = {
                         ...card,
-                        ...cached
+                        ...priceData
                     };
+
+                    // =====================================================
+                    // Save complete set progress
+                    // =====================================================
 
                     const finalPokemonSet: PokemonSet = {
                         name: setName,
@@ -1723,200 +1916,26 @@ class PokemonSetDetailsScraper {
 
                     await this.writeJson(result);
 
-                    continue;
-                }
-
-                console.log(
-                    `Scraping price data for ${card.name} (${card.number})`
-                );
-
-                const cardApiUrl =
-                    cardsPerSet[setName]?.[card.number] ?? "";
-
-                if (!cardApiUrl) {
-                    console.warn(
-                        `No API URL found for ${card.name} (${card.number}) in set ${setName}`
+                    console.log(
+                        `Saved progress for ${card.name} (${card.number})`
                     );
-                    continue;
+
+                    await new Promise(resolve =>
+                        setTimeout(resolve, 2000)
+                    );
                 }
 
-                let priceData: {
-                    priceOnRelease: number;
-                    priceEvolution: any[];
-                    ebaySoldVolumeFrom2026: number;
-                } | null = null;
-
-                // =====================================================
-                // Retry up to 3 times if we get completely empty data
-                // =====================================================
-
-                for (let attempt = 1; attempt <= 3; attempt++) {
-                    try {
-                        console.log(
-                            `Attempt ${attempt}/3 for ${card.name} (${card.number})`
-                        );
-
-                        const {
-                            priceOnRelease,
-                            priceEvolution,
-                            ebaySoldVolumeFrom2026
-                        } = await this.scrapeCardPriceData(
-                            page,
-                            cardApiUrl
-                        );
-
-                        const noData =
-                            priceOnRelease === 0 &&
-                            priceEvolution.length === 0 &&
-                            ebaySoldVolumeFrom2026 === 0;
-
-                        if (noData) {
-                            console.warn(
-                                `No price data returned for ${card.name} (${card.number})`
-                            );
-
-                            if (attempt < 3) {
-                                console.log(
-                                    `Retrying in 10 seconds...`
-                                );
-
-                                await new Promise(resolve =>
-                                    setTimeout(resolve, 10000)
-                                );
-
-                                continue;
-                            }
-
-                            // All 3 attempts returned no data.
-                            console.error(
-                                `Price limit likely reached. ` +
-                                `3 consecutive attempts returned no data.`
-                            );
-
-                            hitLimitReached = true;
-                            break;
-                        }
-
-                        // =================================================
-                        // Successful request
-                        // =================================================
-
-                        priceData = {
-                            priceOnRelease,
-                            priceEvolution,
-                            ebaySoldVolumeFrom2026
-                        };
-
-                        console.log(
-                            "Scraped successfully for card:",
-                            card.name,
-                            "priceOnRelease:",
-                            priceOnRelease,
-                            "priceEvolution:",
-                            priceEvolution,
-                            "ebaySoldVolumeFrom2026:",
-                            ebaySoldVolumeFrom2026
-                        );
-
-                        break;
-
-                    } catch (error) {
-                        console.error(
-                            `Attempt ${attempt}/3 failed for ${card.name} (${card.number})`,
-                            error
-                        );
-
-                        if (attempt < 3) {
-                            console.log(
-                                `Retrying in 10 seconds...`
-                            );
-
-                            await new Promise(resolve =>
-                                setTimeout(resolve, 10000)
-                            );
-                        } else {
-                            console.error(
-                                `All 3 attempts failed. Stopping price scraping.`
-                            );
-
-                            hitLimitReached = true;
-                        }
-                    }
-                }
-
-                // =====================================================
-                // Stop if all retries failed
-                // =====================================================
-
-                if (hitLimitReached || !priceData) {
+                if (hitLimitReached) {
                     break;
                 }
-
-                // =====================================================
-                // Save cache immediately
-                // =====================================================
-
-                await this.saveCardCache(
-                    setName,
-                    card.number,
-                    priceData
-                );
-
-                // =====================================================
-                // Update card
-                // =====================================================
-
-                // @ts-expect-error
-                hitsRarities[j].concernedCards[i] = {
-                    ...card,
-                    ...priceData
-                };
-
-                // =====================================================
-                // Save complete set progress
-                // =====================================================
-
-                const finalPokemonSet: PokemonSet = {
-                    name: setName,
-                    series: setSeries,
-                    number: "0",
-                    releaseDate: setReleaseDate,
-                    boosterPrice: boosterPrice,
-                    numberOfChases: setChaseCards?.length ?? 0,
-                    numberOfHits: setHitRates?.length ?? 0,
-                    chaseRatioOutOfHits:
-                        (setChaseCards?.length ?? 0) /
-                        (setHitRates?.length ?? 1),
-                    numberOfCards: Object.keys(
-                        setCards ?? {}
-                    ).length,
-                    hitsRarities: hitsRarities
-                };
-
-                result[setName] = finalPokemonSet;
-
-                await this.writeJson(result);
-
-                console.log(
-                    `Saved progress for ${card.name} (${card.number})`
-                );
-
-                await new Promise(resolve =>
-                    setTimeout(resolve, 2000)
-                );
             }
 
             if (hitLimitReached) {
+                console.warn(
+                    "Price API limit appears to have been reached. Stopping scraper."
+                );
                 break;
             }
-        }
-
-        if (hitLimitReached) {
-            console.warn(
-                "Price API limit appears to have been reached. Stopping scraper."
-            );
-            break;
-        }
         }
 
         // console.log(finalPokemonSet);
