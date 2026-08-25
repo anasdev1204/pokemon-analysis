@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scrape": "tsx src/scrape.ts",
+    "ebay": "tsx src/ebay.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
