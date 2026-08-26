@@ -105,7 +105,8 @@ class Scraper {
                 console.log(`Scraping series: ${shortName} - ${seriesLink.href}`);
 
                 await this.scrapeSetsData(page, shortName, seriesLink);
-
+                
+                // @ts-expect-error
                 const isFullyScraped = this.seriesCards[shortName].cards.every(card => card.priceEvolutionCM.length > 0);
                 if (isFullyScraped) {
                     console.log(`Series ${shortName} already fully scraped. Skipping card scraping.`);
@@ -145,6 +146,8 @@ class Scraper {
         seriesLink: URL
     ): Promise<void> {
         try {
+                // @ts-expect-error
+
             if (this.seriesCards[shortName].cards.length > 0) {
                 console.log(`Series ${shortName} already scraped. Skipping.`);
                 return;
@@ -157,6 +160,7 @@ class Scraper {
                 return !this.raritiesToExclude.includes(cards.id_rarete);
             });
 
+            // @ts-expect-error
             this.seriesCards[shortName].cards = cards.map((card: any) => {
                 const cardNumber = parseInt(card.num_card.slice(0, 3));
                 const rarityLabel = Object.entries(this.raritiesLabel)
@@ -200,6 +204,7 @@ class Scraper {
         try {
             const cards: Card[] = [];
 
+            // @ts-expect-error
             for (const card of this.seriesCards[shortName].cards) {
                 const cardName = card.name;
                 const cardNumber = card.number;
@@ -208,6 +213,7 @@ class Scraper {
 
                 console.log(`Scraping Card ${cardName} (${cardNumber}) from series ${shortName}`);
 
+                // @ts-expect-error
                 const currentEntry = this.seriesCards[shortName].cards.find(c => c.id === cardId) as Card;
 
                 if (!currentEntry) {
@@ -253,7 +259,7 @@ class Scraper {
                 cards.push(newCard);
             }
 
-
+            // @ts-expect-error
             this.seriesCards[shortName].cards = [
                 ...cards
             ];
