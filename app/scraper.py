@@ -138,7 +138,6 @@ class PokecardexScraperPython:
         return json.loads(decrypted_raw.decode("utf-8"))
 
     def fetch_and_decrypt_page(self, url: str) -> dict:
-        print(f"Fetching: {url}")
         response = self.session.get(url, timeout=15)
         response.raise_for_status()
 
@@ -161,9 +160,8 @@ class PokecardexScraperPython:
 
     def scrape_card_by_id(self, card_id: int) -> dict:
         card_url = f"{self.base_url}/carte/{card_id}"
-        print(f"Scraping Card ID: {card_id}")
         card_data = self.fetch_and_decrypt_page(card_url)
-
+    
         offers = [
             {"offer_id": o["id_possession"], "user_id": o["id_user"], "number": str(o["quantite"])}
             for o in card_data.get("ventes", [])
@@ -238,11 +236,10 @@ def load_scraped_sets_data():
     return {}
 
 def run_daily_pipeline():
-    print(f"Starting daily pipeline...")
-    ensure_csv_headers()
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    print(f"{today_str}")
 
-    current_t = get_latest_time_step() + 1
-    print(f"Assigned Time Step (t): {current_t}")
+    ensure_csv_headers()
 
     ebay_scraper = EbayScraperPython("EBAY_FR")
     cards_scraper = PokecardexScraperPython()
@@ -251,12 +248,10 @@ def run_daily_pipeline():
 
     if os.path.exists(PRICES_CSV_PATH) and os.path.getsize(PRICES_CSV_PATH) > 0:
         df = pd.read_csv(PRICES_CSV_PATH)
-        if not df.empty:
-            if "t" in df.columns and df["t"].notnull().any():
-                current_t = int(df["t"].max())
     else:
         return                
 
+    print(f"Today's date: {today_str}")
     for series_id, series_data in series_cards.items():
         price_rows = []
         ebay_rows = []
@@ -266,73 +261,67 @@ def run_daily_pipeline():
         hype_level = series_data.get("hypeLevel", 0)
         age_level = series_data.get("ageLevel", 0)
 
-
-        for card in series_data.get("cards", []):
-            print(f"Processing card: {card.get('name', '')} (number: {card.get('number', '')})")
+        cards = series_data.get("cards", [])
+        for i, card in enumerate(cards):
             card_id = card.get("id")
             card_name = card.get("name", "")
             card_number = card.get("number", "")
+            
             last_checked_date = card.get("lastCheckedDate", "")
+
+            if last_checked_date == today_str:
+                print(f"Skipping card {card_name} (#{card_number}): Already checked today ({today_str}).")
+                continue
+
+            print(f"Processing card: {card_name} (number: {card_number})")
             last_date_obj = datetime.strptime(last_checked_date, "%Y-%m-%d") if last_checked_date else None
             
             card_df = df[df["card_id"] == card_id]
-            current_t = current_t = int(card_df["t"].max())
-            print(f"Current Time Step (t) for card {card_id}: {current_t}")
+            current_t = int(card_df["t"].max() if not card_df.empty else 0)
 
             scraped_card_data = cards_scraper.scrape_card_by_id(card_id)
 
-            cm_map = scraped_card_data["priceEvolutionCM"]
-            prices_to_add = []
+            current_offer = sum(int(o.get("number", 0)) for o in scraped_card_data.get("offers", []))
+            current_demand = sum(int(d.get("number", 0)) for d in scraped_card_data.get("demands", []))
 
-            for price in cm_map:
-                price_date = price.get("date")
-                price_value = price.get("price")
+            cm_dict = {p["date"]: p.get("price") for p in scraped_card_data.get("priceEvolutionCM", []) if "date" in p}
+            tcg_dict = {p["date"]: p.get("price") for p in scraped_card_data.get("priceEvolutionTCG", []) if "date" in p}
 
-                is_date_after_last_checked = last_date_obj is None or (price_date and datetime.strptime(price_date, "%Y-%m-%d") > last_date_obj)
+            all_dates = sorted(list(set(cm_dict.keys()).union(set(tcg_dict.keys()))))
 
-                if price_value is not None and is_date_after_last_checked:
-                    prices_to_add.append(price_value)
+            for date_str in all_dates:
+                price_date_obj = datetime.strptime(date_str, "%Y-%m-%d")
 
-            tcg_map = scraped_card_data["priceEvolutionTCG"]
+                if last_date_obj and price_date_obj <= last_date_obj:
+                    continue
 
-            for price in tcg_map:
-                price_date = price.get("date")
-                price_value = price.get("price")
+                cm_price = cm_dict.get(date_str, "")
+                tcg_price = tcg_dict.get(date_str, "")
 
-                is_date_after_last_checked = last_date_obj is None or (price_date and datetime.strptime(price_date, "%Y-%m-%d") > last_date_obj)
+                current_t += 1
+                price_rows.append([
+                    current_t,
+                    series_id,
+                    commercial_name,
+                    hype_level,
+                    age_level,
+                    card_id,
+                    card_name,
+                    card_number,
+                    card.get("rarity", ""),
+                    card.get("pokedexId", ""),
+                    card.get("image", ""),
+                    current_offer,
+                    current_demand,
+                    cm_price if cm_price is not None else "",
+                    tcg_price if tcg_price is not None else ""
+                ])
 
-                if price_value is not None and is_date_after_last_checked:
-                    prices_to_add.append(price_value)
-
-            current_offer = sum(int(o.get("number", 0)) for o in scraped_card_data["offers"])
-            current_demand = sum(int(d.get("number", 0)) for d in scraped_card_data["demands"])
-
-            print(len(prices_to_add), f"new price points found for card {card_id}.")
-
-            for cmprice, tcgprice in zip(cm_map, tcg_map):
-                if cmprice.get("date") == tcgprice.get("date"):
-                    price_rows.append([
-                        current_t,
-                        series_id,
-                        commercial_name,
-                        hype_level,
-                        age_level,
-                        card_id,
-                        card_name,
-                        card_number,
-                        card.get("rarity", ""),
-                        card.get("pokedexId", ""),
-                        card.get("image", ""),
-                        current_offer,
-                        current_demand,
-                        cmprice.get("price", ""),
-                        tcgprice.get("price", "")
-                    ])
+            card["lastCheckedDate"] = today_str
 
             try:
                 card_number_with_leading_zeros = str(card_number).zfill(3)
                 query = f"Pokémon {card_name} {card_number_with_leading_zeros}"
-                print(f"Searching eBay for card: {query}")
                 ebay_items = ebay_scraper.search_fixed_price(query, only_french=True)
 
                 for item in ebay_items:
@@ -351,21 +340,36 @@ def run_daily_pipeline():
             except Exception as e:
                 print(f"Failed to fetch eBay posts for card {card_id}: {e}")
 
+        with open(POKEMON_SETS_JSON_PATH, "w", encoding="utf-8") as f:
+            json.dump(series_cards, f, indent=2, ensure_ascii=False)
+
         if price_rows:
             with open(PRICES_CSV_PATH, "a", newline="", encoding="utf-8") as f:
                 writer = csv.writer(f)
                 writer.writerows(price_rows)
-            print(f"Appended {len(price_rows)} rows to {PRICES_CSV_PATH}")
-
+                
         if ebay_rows:
             with open(EBAY_CSV_PATH, "a", newline="", encoding="utf-8") as f:
                 writer = csv.writer(f)
                 writer.writerows(ebay_rows)
-            print(f"Appended {len(ebay_rows)} rows to {EBAY_CSV_PATH}")
 
-        time.sleep(60)
-
+    time.sleep(60)
     print(f"Pipeline execution finished successfully.")
 
 if __name__ == "__main__":
-    run_daily_pipeline()
+    max_attempts = 5
+    current_attempt = 0
+
+    while current_attempt < max_attempts:
+        print(f"Attempt {current_attempt + 1} of {max_attempts}")
+        try:
+            run_daily_pipeline()
+        except Exception as e:
+            current_attempt += 1
+            print(f"Attempt {current_attempt} failed: {e}")
+            time.sleep(100)
+        else:
+            break
+
+    if current_attempt == max_attempts:
+        print("Pipeline execution failed after maximum attempts.")

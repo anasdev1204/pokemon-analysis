@@ -1,3 +1,6 @@
 ebay_token.json
 
 .env
+
+scraper_error.log
+scraper_output.log
