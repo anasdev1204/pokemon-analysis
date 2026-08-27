@@ -363,6 +363,8 @@ def run_daily_pipeline():
                 writer.writerows(ebay_rows)
             print(f"Appended {len(ebay_rows)} rows to {EBAY_CSV_PATH}")
 
+        time.sleep(60)
+
     print(f"Pipeline execution finished successfully.")
 
 if __name__ == "__main__":
