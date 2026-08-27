@@ -132,19 +132,28 @@ def build_price_chart(df_card_hist, card_name, added_day=None, added_price=None)
     return fig
 
 def render_ebay_posts_section(card_id):
+
     st.subheader("eBay Posts")
+
     df_ebay = load_ebay_posts(card_id)
+
     if df_ebay.empty:
         st.info("No eBay posts available for this card.")
         return
-    st.dataframe(
-        df_ebay,
-        column_config={
-            "post_title": st.column_config.TextColumn("Post Title"),
-            "type": st.column_config.TextColumn("Type"),
-            "price": st.column_config.NumberColumn("Price", format="$%.2f"),
-            "date": st.column_config.TextColumn("Date"),
-        },
-        hide_index=True,
-        use_container_width=True,
-    )
+
+    for _, row in df_ebay.iterrows():
+
+        title = str(row["post_title"])
+        url = str(row["url"])
+        post_type = str(row["type"])
+        price = float(row["price"])
+        date = str(row["date"])
+
+        st.markdown(
+            f'<a href="{url}" target="_blank">{title}</a>',
+            unsafe_allow_html=True
+        )
+
+        st.caption(
+            f"{post_type}  |  ${price:.2f}  |  {date}"
+        )

@@ -22,10 +22,13 @@ def save_follow_list(follow_data):
 @st.cache_data
 def load_ebay_posts(card_id=None):
     if not os.path.exists(EBAY_POSTS_PATH):
-        return pd.DataFrame(columns=["post_title", "type", "price", "date"])
-    df = pd.read_csv(EBAY_POSTS_PATH)
+        return pd.DataFrame(columns=["post_title", "type", "price", "date", "url"])
+    
+    df = pd.read_csv(
+        EBAY_POSTS_PATH,
+    )
+
     if card_id is not None and "card_id" in df.columns:
-        df = df[df["card_id"] == card_id]
-    expected_cols = ["post_title", "type", "price", "date"]
-    present_cols = [c for c in expected_cols if c in df.columns]
-    return df[present_cols]
+        df = df[df["card_id"] == str(card_id)]
+
+    return df

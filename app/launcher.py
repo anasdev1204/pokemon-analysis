@@ -13,7 +13,7 @@ import time
 APP_FILE = Path(__file__).parent / "app.py"
 HOST = "127.0.0.1"
 WINDOW_TITLE = "Pokemon Trading"
-WINDOW_SIZE = (720, 460)
+WINDOW_SIZE = (1080, 720)
 
 
 def find_free_port() -> int:
