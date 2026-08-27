@@ -2,6 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 from config import setup_page, PRICES_PATH
 from data_loader import load_prices, load_follow_list, save_follow_list
@@ -27,24 +28,41 @@ df_prices = load_prices()
 latest_day = int(df_prices["t"].max())
 earliest_day = max(30, int(df_prices["t"].min()))
 
+st.set_page_config(page_title="Pokémon Card Analysis", layout="wide", initial_sidebar_state="collapsed")
+st.markdown(
+    """
+    <style>
+        [data-testid="stSidebar"] {
+            display: none;
+        }
+        [data-testid="stSidebarCollapsedControl"] {
+            display: none;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+with st.expander("Controls", expanded=True):
+    current_sim_day = st.slider(
+        "Current day (T)",
+        min_value=earliest_day,
+        max_value=latest_day,
+        value=latest_day,
+        help="Move this back in time to see what the model would have predicted on an earlier day.",
+    )
+    st.sidebar.caption(f"Data available through day **{latest_day}**")
+
+    if st.button("Reload Data"):
+        st.cache_data.clear()
+        st.rerun()
+
+st.divider()
+
 if "selected_card_id" not in st.session_state:
     st.session_state.selected_card_id = None
 if "page_number" not in st.session_state:
     st.session_state.page_number = 0
-
-st.sidebar.markdown("#### Simulation")
-current_sim_day = st.sidebar.slider(
-    "Current day (T)",
-    min_value=earliest_day,
-    max_value=latest_day,
-    value=latest_day,
-    help="Move this back in time to see what the model would have predicted on an earlier day.",
-)
-st.sidebar.caption(f"Data available through day **{latest_day}**")
-
-st.sidebar.markdown("---")
-follow_data_sidebar = load_follow_list()
-st.sidebar.metric("Cards followed", len(follow_data_sidebar))
 
 tab1, tab2 = st.tabs(["Card Repository", "Watchlist"])
 
@@ -131,7 +149,7 @@ with tab1:
         st.plotly_chart(fig, use_container_width=True)
 
         st.markdown("---")
-        # render_ebay_posts_section(selected_id)
+        render_ebay_posts_section(selected_id)
 
         st.markdown("---")
         st.subheader("Model Outlook")

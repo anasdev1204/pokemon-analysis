@@ -1,8 +1,14 @@
+#!/usr/bin/env python3
+import os 
+from pathlib import Path
+
+APP_DIR = Path(__file__).resolve().parent
+os.chdir(APP_DIR)
+
 import socket
 import subprocess
 import sys
 import time
-from pathlib import Path
 
 APP_FILE = Path(__file__).parent / "app.py"
 HOST = "127.0.0.1"
