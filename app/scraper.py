@@ -410,7 +410,7 @@ if __name__ == "__main__":
             )
 
             df_ebay = df_ebay[df_colums]
-            df_ebay.sort_values(by=["card_id", "date"], inplace=True)
+            df_ebay.sort_values(by=["card_id", "date"], inplace=True, ascending=[True, False])
 
             df_ebay.to_csv(
                 EBAY_CSV_PATH,
