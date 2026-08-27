@@ -386,26 +386,56 @@ if __name__ == "__main__":
     max_attempts = 5
     current_attempt = 0
 
-    while current_attempt < max_attempts:
-        print(f"Attempt {current_attempt + 1} of {max_attempts}")
-        try:
-            run_daily_pipeline()
-        except Exception as e:
-            current_attempt += 1
-            print(f"Attempt {current_attempt} failed: {e}")
-            time.sleep(100)
-        else:
-            break
+    # while current_attempt < max_attempts:
+    #     print(f"Attempt {current_attempt + 1} of {max_attempts}")
+    #     try:
+    #         run_daily_pipeline()
+    #     except Exception as e:
+    #         current_attempt += 1
+    #         print(f"Attempt {current_attempt} failed: {e}")
+    #         time.sleep(100)
+    #     else:
+    #         break
 
     # Sort price history CSV by 'card_id' and 't' columns to ensure chronological order
-    if os.path.exists(PRICES_CSV_PATH) and os.path.getsize(PRICES_CSV_PATH) > 0:
+    if os.path.exists(EBAY_CSV_PATH) and os.path.getsize(EBAY_CSV_PATH) > 0:
         try:
-            df_prices = pd.read_csv(PRICES_CSV_PATH)
-            df_prices.sort_values(by=["card_id", "t"], inplace=True)
-            df_prices.to_csv(PRICES_CSV_PATH, index=False)
-            print(f"Sorted {PRICES_CSV_PATH} by 'card_id' and 't'.")
+            df_colums = [
+                "card_id", "item_id", "post_title", "url", "type", "date", "price"
+            ]
+            df_ebay = pd.read_csv(
+                EBAY_CSV_PATH,
+                header=None,
+                names=df_colums
+            )
+
+            df_ebay = df_ebay[df_colums]
+            df_ebay.sort_values(by=["card_id", "date"], inplace=True)
+
+            df_ebay.to_csv(
+                EBAY_CSV_PATH,
+                index=False,
+                header=True
+            )
+
+            print(f"Sorted {EBAY_CSV_PATH} by 'card_id' and 't' with column names.")
         except Exception as e:
-            print(f"Failed to sort {PRICES_CSV_PATH}: {e}")
+            print(f"Failed to sort {EBAY_CSV_PATH}: {e}")
+
+    if os.path.exists(PRICES_CSV_PATH) and os.path.getsize(PRICES_CSV_PATH) > 0:
+            try:
+                df_prices = pd.read_csv(PRICES_CSV_PATH)
+                df_prices.sort_values(by=["card_id", "t"], inplace=True)
+    
+                df_prices.to_csv(
+                    PRICES_CSV_PATH,
+                    index=False,
+                    header=True
+                )
+    
+                print(f"Sorted {PRICES_CSV_PATH} by 'card_id' and 't' with column names.")
+            except Exception as e:
+                print(f"Failed to sort {PRICES_CSV_PATH}: {e}")
 
     if current_attempt == max_attempts:
         print("Pipeline execution failed after maximum attempts.")
