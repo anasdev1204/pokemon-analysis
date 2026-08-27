@@ -319,24 +319,50 @@ def run_daily_pipeline():
 
             card["lastCheckedDate"] = today_str
 
+            existing_ebay_item_ids = set()
+            if os.path.exists(EBAY_CSV_PATH) and os.path.getsize(EBAY_CSV_PATH) > 0:
+                ebay_df = pd.read_csv(EBAY_CSV_PATH)
+                if "itemId" in ebay_df.columns:
+                    existing_ebay_item_ids = set(ebay_df["itemId"].astype(str).tolist())
+
             try:
                 card_number_with_leading_zeros = str(card_number).zfill(3)
                 query = f"Pokémon {card_name} {card_number_with_leading_zeros}"
                 ebay_items = ebay_scraper.search_fixed_price(query, only_french=True)
 
+                fetched_item_ids = set()
+
                 for item in ebay_items:
+                    item_id = str(item.get("itemId", ""))
+                    fetched_item_ids.add(item_id)
+
+                    # Skip if this item ID was already recorded in the CSV previously
+                    if item_id in existing_ebay_item_ids:
+                        continue
+
                     buying_options = "|".join(item.get("buyingOptions", []))
                     price_val = item.get("price", {}).get("value", "")
 
                     ebay_rows.append([
                         card_id,
-                        item.get("itemId", ""),
+                        item_id,
                         item.get("title", ""),
                         item.get("itemWebUrl", ""),
                         buying_options,
                         item.get("itemCreationDate", datetime.utcnow().isoformat()),
                         price_val
                     ])
+
+                    existing_ebay_item_ids.add(item_id)
+
+                if "trackedEbayItemIds" in card:
+                    card["trackedEbayItemIds"] = [
+                        i_id for i_id in card["trackedEbayItemIds"] 
+                        if i_id in fetched_item_ids
+                    ]
+                else:
+                    card["trackedEbayItemIds"] = list(fetched_item_ids)
+
             except Exception as e:
                 print(f"Failed to fetch eBay posts for card {card_id}: {e}")
 
@@ -370,6 +396,16 @@ if __name__ == "__main__":
             time.sleep(100)
         else:
             break
+
+    # Sort price history CSV by 'card_id' and 't' columns to ensure chronological order
+    if os.path.exists(PRICES_CSV_PATH) and os.path.getsize(PRICES_CSV_PATH) > 0:
+        try:
+            df_prices = pd.read_csv(PRICES_CSV_PATH)
+            df_prices.sort_values(by=["card_id", "t"], inplace=True)
+            df_prices.to_csv(PRICES_CSV_PATH, index=False)
+            print(f"Sorted {PRICES_CSV_PATH} by 'card_id' and 't'.")
+        except Exception as e:
+            print(f"Failed to sort {PRICES_CSV_PATH}: {e}")
 
     if current_attempt == max_attempts:
         print("Pipeline execution failed after maximum attempts.")
