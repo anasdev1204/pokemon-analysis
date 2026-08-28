@@ -180,30 +180,57 @@ with tab1:
 
         with st.expander("Search, Filter & Sort", expanded=True):
             search_col, sort_col = st.columns([2, 1])
+
             with search_col:
-                search_query = st.text_input("Search by card name", placeholder="e.g. Charizard")
+                search_query = st.text_input(
+                    "Search by card name",
+                    placeholder="e.g. Charizard",
+                    key="repository_search",
+                )
+
             with sort_col:
                 sort_by = st.selectbox(
                     "Sort by",
                     ["Card Name", "Highest Price", "Lowest Price", "Recent Demand"],
+                    key="repository_sort",
                 )
 
             f_col1, f_col2, f_col3 = st.columns(3)
-            with f_col1:
-                rarity_filter = st.multiselect("Rarity", df_prices["rarity"].dropna().unique())
-            with f_col2:
-                series_filter = st.multiselect("Series ID", df_prices["seriesId"].dropna().unique())
-            with f_col3:
-                cards_per_row = st.selectbox("Cards per row", [3, 4, 5, 6], index=1)
 
+            with f_col1:
+                rarity_filter = st.multiselect(
+                    "Rarity",
+                    df_prices["rarity"].dropna().unique(),
+                    key="repository_rarity",
+                )
+
+            with f_col2:
+                series_filter = st.multiselect(
+                    "Series ID",
+                    df_prices["seriesId"].dropna().unique(),
+                    key="repository_series",
+                )
+
+            with f_col3:
+                cards_per_row = st.selectbox(
+                    "Cards per row",
+                    [3, 4, 5, 6],
+                    index=1,
+                    key="repository_cards_per_row",
+                )
+                
         if rarity_filter:
             df_latest_slice = df_latest_slice[df_latest_slice["rarity"].isin(rarity_filter)]
+            st.session_state.page_number = 0
+            
         if series_filter:
             df_latest_slice = df_latest_slice[df_latest_slice["seriesId"].isin(series_filter)]
+            st.session_state.page_number = 0
         if search_query:
             df_latest_slice = df_latest_slice[
                 df_latest_slice["name"].str.contains(search_query, case=False, na=False)
             ]
+            st.session_state.page_number = 0 
 
         sort_map = {
             "Card Name": ("name", True),
