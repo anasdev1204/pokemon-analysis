@@ -11,12 +11,17 @@ from Crypto.Cipher import AES
 from dotenv import load_dotenv
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
+import warnings
+warnings.filterwarnings("ignore")
 
 load_dotenv()
 
 PRICES_CSV_PATH = os.path.join("livedata", "price_history.csv")
 EBAY_CSV_PATH = os.path.join("livedata", "ebay_posts.csv")
 POKEMON_SETS_JSON_PATH = os.path.join(".", "pokemon-sets.json")
+HYPE_LEVELS_JSON_PATH = os.path.join(".", "hype-level.json")
+AGE_LEVELS_JSON_PATH = os.path.join(".", "age-level.json")
+SUCCESS_JSON_PATH = os.path.join(".", "success.json")
 TOKEN_FILE = "./ebay_token.json"
 
 PRICES_HEADERS = [
@@ -235,9 +240,115 @@ def load_scraped_sets_data():
             return json.load(f)
     return {}
 
+def reset_scraped_sets_data(day_to_set: str):
+    pokemon_data = json.load(open(POKEMON_SETS_JSON_PATH, "r", encoding="utf-8")) if os.path.exists(POKEMON_SETS_JSON_PATH) else {}
+
+    for set in pokemon_data.keys():
+        print(set)
+        data = pokemon_data[set]
+        for card in data.get("cards", []):
+            card["lastCheckedDate"] = day_to_set
+
+    json.dump(pokemon_data, open(POKEMON_SETS_JSON_PATH, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    
+def get_sets_cards(shortName: str, url: str) -> list:
+    scraper = PokecardexScraperPython()
+    try:
+        sets_data = scraper.fetch_and_decrypt_page(url)
+        cards = []
+
+        for card in sets_data.get("cartes", []):
+            card_number = int(card.get("num_card", 0)[:3]) if card.get("num_card") else 0
+            rarity_id = card.get("id_rarete")
+            if rarity_id in RARITIES_TO_EXCLUDE:
+                continue
+
+            rarity_label = 1
+            for label_id, label_values in RARITIES_LABEL.items():
+                if rarity_id in label_values:
+                    rarity_id = label_id
+                    break
+    
+            cards.append({
+                "id": card["id_card"],
+                "name": card["name_card_fr"],
+                "number": card_number,
+                "rarity": rarity_label,
+                "pokedexId": card["id_pokedex"] if card.get("id_pokedex") else None,
+                "offer": [],
+                "demand": [],
+                "image": f"https://pokecardex-scans.b-cdn.net/sets/{shortName}/FR/{card_number}.jpg?class=",
+                "priceEvolutionCM": [],
+                "priceEvolutionTCG": [],
+                "lastCheckedDate": "",
+                "trackedEbayItemIds": []
+            })
+
+        return cards
+    except Exception as e:
+        print(f"Failed to fetch cards for sets list: {e}")
+        return []
+    finally:
+        scraper.close()
+
+def check_and_update_sets_list():
+    print("Checking for updates in the series list...")
+    sets_list_url = "https://www.pokecardex.com/sets"
+    scraper = PokecardexScraperPython()
+    try:
+        sets_data = scraper.fetch_and_decrypt_page(sets_list_url)
+        sets_data = sets_data.get("internationalSeries", [])
+        sets_ids = set([s["shortName"] for s in sets_data])
+
+        existing_data = load_scraped_sets_data()
+        existing_series_ids = set(existing_data.keys())
+
+        hype_level = json.load(open(HYPE_LEVELS_JSON_PATH, "r", encoding="utf-8"))
+        hype_levels_ids = set([k for k in hype_level.keys()])
+        age_levels = json.load(open(AGE_LEVELS_JSON_PATH, "r", encoding="utf-8"))
+        age_levels_ids = set([k for k in age_levels.keys()])
+
+        sets_not_existing = sets_ids - existing_series_ids
+        valid_sets = (
+            sets_not_existing
+            .intersection(hype_levels_ids)
+            .intersection(age_levels_ids)
+        )
+
+        series_to_scrape = []
+        for s in sets_data:
+            if s["shortName"] in valid_sets:
+                series_to_scrape.append(s)
+
+        if len(series_to_scrape) > 0:
+            print("Detected changes in the series list. Updating local data.")
+            updated_data = existing_data.copy()
+            for s in series_to_scrape:
+                print(s)
+                cards = get_sets_cards(s["shortName"], s["link"])
+                updated_data[s["shortName"]] = {
+                    "commercialName": s.get("commercialName", ""),
+                    "hypeLevel": hype_level.get(s["shortName"], 0),
+                    "ageLevel": age_levels.get(s["shortName"], 0),
+                    "cards": cards,
+                    "lastCheckedDate": ""
+                }
+
+            with open(POKEMON_SETS_JSON_PATH, "w", encoding="utf-8") as f:
+                json.dump(updated_data, f, indent=2, ensure_ascii=False)
+        else:
+            print("No changes detected in the series list.")
+
+    except Exception as e:
+        print(f"Failed to check/update series list: {e}")
+    finally:
+        scraper.close()
+
 def run_daily_pipeline():
     today_str = datetime.now().strftime("%Y-%m-%d")
     print(f"{today_str}")
+
+    check_and_update_sets_list()
 
     ensure_csv_headers()
 
@@ -381,23 +492,30 @@ def run_daily_pipeline():
 
     time.sleep(60)
     print(f"Pipeline execution finished successfully.")
+    with open(SUCCESS_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump({"last_success": today_str}, f, indent=2)
 
 if __name__ == "__main__":
     max_attempts = 5
     current_attempt = 0
 
-    # while current_attempt < max_attempts:
-    #     print(f"Attempt {current_attempt + 1} of {max_attempts}")
-    #     try:
-    #         run_daily_pipeline()
-    #     except Exception as e:
-    #         current_attempt += 1
-    #         print(f"Attempt {current_attempt} failed: {e}")
-    #         time.sleep(100)
-    #     else:
-    #         break
+    # day_to_set = ""
+    # reset_scraped_sets_data(day_to_set)
 
-    # Sort price history CSV by 'card_id' and 't' columns to ensure chronological order
+    # check_and_update_sets_list()
+
+    while current_attempt < max_attempts:
+        print(f"Attempt {current_attempt + 1} of {max_attempts}")
+        try:
+            run_daily_pipeline()
+        except Exception as e:
+            current_attempt += 1
+            print(f"Attempt {current_attempt} failed: {e}")
+            time.sleep(100)
+        else:
+            break
+
+
     if os.path.exists(EBAY_CSV_PATH) and os.path.getsize(EBAY_CSV_PATH) > 0:
         try:
             df_colums = [
@@ -425,7 +543,7 @@ if __name__ == "__main__":
     if os.path.exists(PRICES_CSV_PATH) and os.path.getsize(PRICES_CSV_PATH) > 0:
             try:
                 df_prices = pd.read_csv(PRICES_CSV_PATH)
-                df_prices.sort_values(by=["card_id", "t"], inplace=True)
+                df_prices.sort_values(by=["seriesId", "card_id", "t"], inplace=True)
     
                 df_prices.to_csv(
                     PRICES_CSV_PATH,
