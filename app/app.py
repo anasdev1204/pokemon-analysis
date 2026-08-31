@@ -67,7 +67,10 @@ if "page_number" not in st.session_state:
 tab1, tab2 = st.tabs(["Card Repository", "Watchlist"])
 
 with tab1:
-    df_latest_slice = df_prices[df_prices["t"] == current_sim_day].copy()
+    df_latest_slice = df_prices[
+        (df_prices["t"] == current_sim_day) &
+        (df_prices["cardmarket_price"].notna())
+    ].copy()
     selected_id = st.session_state.selected_card_id
 
     if selected_id is not None:
@@ -221,16 +224,14 @@ with tab1:
                 
         if rarity_filter:
             df_latest_slice = df_latest_slice[df_latest_slice["rarity"].isin(rarity_filter)]
-            st.session_state.page_number = 0
             
         if series_filter:
             df_latest_slice = df_latest_slice[df_latest_slice["seriesId"].isin(series_filter)]
-            st.session_state.page_number = 0
+
         if search_query:
             df_latest_slice = df_latest_slice[
                 df_latest_slice["name"].str.contains(search_query, case=False, na=False)
             ]
-            st.session_state.page_number = 0 
 
         sort_map = {
             "Card Name": ("name", True),
@@ -254,6 +255,8 @@ with tab1:
                 st.session_state.page_number * page_size : (st.session_state.page_number + 1) * page_size
             ]
 
+            latest_prices_dict = df_latest_slice.set_index("card_id")["cardmarket_price"].to_dict()
+
             rows = list(page_df.groupby(np.arange(len(page_df)) // cards_per_row))
 
             for _, row_group in rows:
@@ -269,7 +272,7 @@ with tab1:
 
                             st.markdown(f"**{card['name']}**")
                             st.caption(f"Series {card['seriesId']} · {card['rarity']}")
-                            st.markdown(f"**${card['cardmarket_price']:.2f}**")
+                            st.markdown(f"**${latest_prices_dict.get(card['card_id'], 0.0):.2f}**")
 
                             if st.button("View Card", key=f"view_{card['card_id']}", use_container_width=True):
                                 st.session_state.selected_card_id = card["card_id"]
