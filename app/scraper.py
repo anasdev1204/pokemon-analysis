@@ -341,8 +341,6 @@ def check_and_update_sets_list():
 
     except Exception as e:
         print(f"Failed to check/update series list: {e}")
-    finally:
-        scraper.close()
 
 def run_daily_pipeline():
     today_str = datetime.now().strftime("%Y-%m-%d")
@@ -352,14 +350,16 @@ def run_daily_pipeline():
 
     ensure_csv_headers()
 
+    print("Starting daily pipeline execution...")
     ebay_scraper = EbayScraperPython("EBAY_FR")
     cards_scraper = PokecardexScraperPython()
 
     series_cards = load_scraped_sets_data()
-
-    if os.path.exists(PRICES_CSV_PATH) and os.path.getsize(PRICES_CSV_PATH) > 0:
+    # Make script that eliminates empty values from prices and remove the days where there are
+    if os.path.exists(PRICES_CSV_PATH):
         df = pd.read_csv(PRICES_CSV_PATH)
     else:
+        print("No existing prices CSV found.")
         return                
 
     print(f"Today's date: {today_str}")
@@ -495,6 +495,23 @@ def run_daily_pipeline():
     with open(SUCCESS_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump({"last_success": today_str}, f, indent=2)
 
+def clean_and_recalculate_t(csv_path, output_path):
+    df = pd.read_csv(csv_path)
+
+    df = df.dropna(subset=["cardmarket_price"]).copy()
+
+    df = df.sort_values(["card_id", "t"])
+
+    df["t"] = (
+        df.groupby("card_id")["t"]
+        .transform(lambda x: range(x.iloc[0], x.iloc[0] + len(x)))
+    )
+
+    df.to_csv(output_path, index=False)
+
+    return df
+
+
 if __name__ == "__main__":
     max_attempts = 5
     current_attempt = 0
@@ -544,7 +561,6 @@ if __name__ == "__main__":
             try:
                 df_prices = pd.read_csv(PRICES_CSV_PATH)
                 df_prices.sort_values(by=["seriesId", "card_id", "t"], inplace=True)
-    
                 df_prices.to_csv(
                     PRICES_CSV_PATH,
                     index=False,
@@ -552,8 +568,12 @@ if __name__ == "__main__":
                 )
     
                 print(f"Sorted {PRICES_CSV_PATH} by 'card_id' and 't' with column names.")
+
+                df_prices = clean_and_recalculate_t(PRICES_CSV_PATH, PRICES_CSV_PATH)
+                print(f"Recalculated 't' values in {PRICES_CSV_PATH}.")
             except Exception as e:
                 print(f"Failed to sort {PRICES_CSV_PATH}: {e}")
+
 
     if current_attempt == max_attempts:
         print("Pipeline execution failed after maximum attempts.")
